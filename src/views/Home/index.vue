@@ -787,12 +787,18 @@
         </div>
       </div>
     </el-header>
-    <el-main style="background-color: #202225"></el-main>
+    <el-main style="background-color: #202225">
+      <StudyWay />
+    </el-main>
   </el-container>
 </template>
 
 <script>
+import StudyWay from "./StudyWay/index";
 export default {
+  components: {
+    StudyWay,
+  },
   data() {
     return {
       tabPosition: "bottom",
@@ -929,7 +935,6 @@ export default {
   }
 
   .el-main {
-    background-color: #e9eef3;
     text-align: center;
     line-height: 160px;
   }
