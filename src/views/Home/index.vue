@@ -7,7 +7,7 @@
         <li>题库</li>
         <li>竞赛</li>
       </ul>
-      <div class="svgs">
+      <div class="svgs" v-if="userName">
         <svg
           t="1648800715971"
           class="icon"
@@ -861,6 +861,36 @@
                       </div>
                       <div class="input-text">
                         <svg
+                          t="1650286589520"
+                          class="icon"
+                          viewBox="0 0 1154 1024"
+                          version="1.1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          p-id="12503"
+                          width="16"
+                          height="16"
+                        >
+                          <path
+                            d="M957.660022 521.476035L494.519771 58.777713a200.193257 200.193257 0 0 0-66.289158-41.541206A200.193257 200.193257 0 0 0 353.544829 0.001326H83.085064A79.988917 79.988917 0 0 0 24.750605 24.749278 79.54699 79.54699 0 0 0 0.002653 83.083737V353.543502a200.635185 200.635185 0 0 0 17.235181 74.685784 193.564341 193.564341 0 0 0 41.983133 65.405303l463.140251 464.024106a79.54699 79.54699 0 0 0 58.334459 23.864096 83.082411 83.082411 0 0 0 58.776386-23.864096l318.187959-318.629886a79.54699 79.54699 0 0 0 23.864096-58.334459 83.082411 83.082411 0 0 0-23.864096-59.218315z m-60.544098 112.249641l-262.505066 265.156632a68.498797 68.498797 0 0 1-48.612049 19.886747 65.405303 65.405303 0 0 1-48.170121-19.886747L101.646028 460.931938a159.977835 159.977835 0 0 1-34.470362-54.35711 165.722895 165.722895 0 0 1-14.141687-62.311809v-220.963859a65.84723 65.84723 0 0 1 20.328675-48.170122 65.84723 65.84723 0 0 1 48.170122-22.096386h220.96386a165.280967 165.280967 0 0 1 62.753736 14.141687 165.280967 165.280967 0 0 1 54.357109 34.470362l436.18266 435.298804a68.498797 68.498797 0 0 1 19.886747 48.61205 65.84723 65.84723 0 0 1-18.560964 48.170121z"
+                            fill="#515151"
+                            p-id="12504"
+                          ></path>
+                          <path
+                            d="M242.620971 242.619644a49.495905 49.495905 0 0 1-70.266507 0 49.495905 49.495905 0 0 1 0-70.266508 49.495905 49.495905 0 0 1 70.266507 0 49.495905 49.495905 0 0 1 0 70.266508zM1129.127977 521.476035l-441.92772-462.698322a199.751329 199.751329 0 0 0-66.289158-41.983134A199.751329 199.751329 0 0 0 546.225315 0.001326H400.831095a509.100733 509.100733 0 0 1 123.739761 22.538313 200.635185 200.635185 0 0 1 66.289158 41.983134l457.39519 458.279045a83.082411 83.082411 0 0 1 23.864097 58.776387 79.54699 79.54699 0 0 1-23.864097 58.334459l-379.615911 362.38073a206.822173 206.822173 0 0 0 17.235181 12.373976 72.918074 72.918074 0 0 0 38.447712 9.280483 83.082411 83.082411 0 0 0 58.776386-23.864097l346.471333-360.61302a79.54699 79.54699 0 0 0 23.864096-58.334459 83.082411 83.082411 0 0 0-24.306024-59.660242z"
+                            fill="#515151"
+                            p-id="12505"
+                          ></path>
+                        </svg>
+                        <input
+                          type="text"
+                          placeholder="请输入昵称"
+                          prop="nickName"
+                          ref="nickName"
+                          v-model="register.nickName"
+                        />
+                      </div>
+                      <div class="input-text">
+                        <svg
                           t="1650082782116"
                           class="icon"
                           viewBox="0 0 1024 1024"
@@ -934,7 +964,18 @@
                           v-model="register.code"
                           v-validate="{ required: true, regex: /^\d{6}$/ }"
                         />
-                        <button class="b" @click="getCode">发送验证码</button>
+                        <button
+                          type="button"
+                          class="b"
+                          @click="getCode"
+                          :disabled="attcode"
+                          v-if="showbtn"
+                        >
+                          发送验证码
+                        </button>
+                        <button class="b" type="button" v-else>
+                          {{ code_ts }}
+                        </button>
                       </div>
                       <span @click="span2">已有帐号，去登录</span>
                       <el-button
@@ -1151,7 +1192,12 @@ export default {
         password: "",
         email: "",
         code: "",
+        nickName: "",
       },
+      attcode: false,
+      showbtn: true,
+      code_ts: "获取验证码",
+      sec: 60,
     };
   },
   computed: {
@@ -1225,6 +1271,17 @@ export default {
     },
     //获取验证码
     async getCode() {
+      var timer = setInterval(() => {
+        this.sec = this.sec - 1;
+        this.code_ts = this.sec + "S后重试";
+        this.showbtn = false;
+        if (this.sec === 0) {
+          clearInterval(timer);
+          this.sec = 60;
+          this.code_ts = this.sec + "S后重试";
+          this.showbtn = true;
+        }
+      }, 1000);
       try {
         const { email } = this.register;
         email && (await this.$store.dispatch("getCode", { email: email }));
@@ -1233,13 +1290,13 @@ export default {
     //用户注册
     async userRegister() {
       try {
-        const { username, email, code, password, realName } = this.register;
+        const { username, email, code, password, nickName } = this.register;
         await this.$store.dispatch("userRegister", {
           username,
           email,
           code,
           password,
-          realName,
+          nickName,
         });
         this.$message({
           type: "success",
@@ -1376,7 +1433,7 @@ export default {
       .btn {
         width: 150px;
         color: white;
-        margin: 1.5em 0;
+        margin: 1.5em -4em;
         h1 {
           font-size: 16px;
           color: white;
@@ -1444,9 +1501,10 @@ export default {
                 }
                 .btn {
                   display: inline-block;
+                  position: absolute;
                   width: 265px;
-                  margin-top: 0.8em;
-                  margin-left: 1em;
+                  margin-top: 1.6em;
+                  margin-left: -12.5em;
                   background-color: rgb(51, 162, 255);
                   border: none;
                   height: 40px;
@@ -1460,15 +1518,15 @@ export default {
           .register-container {
             img {
               width: 70em;
-              height: 36em;
+              height: 39em;
             }
             .title {
               position: relative;
               width: 240px;
               height: 45px;
-              margin: -34em auto;
+              margin: -36.5em auto;
               .top {
-                margin: -14em;
+                margin: -15em;
                 h1 {
                   float: left;
                   font-size: 40px;
@@ -1494,12 +1552,11 @@ export default {
                   font-size: 20px;
                   color: black;
                   margin-left: 5em;
-                  margin-top: 1em;
                 }
                 .icons1 {
                   width: 25px;
                   height: 25px;
-                  margin: 3em 0;
+                  margin: 5em 0;
                 }
                 span {
                   color: black;
@@ -1508,7 +1565,7 @@ export default {
                   position: absolute;
                   width: 20em;
                   height: 30em;
-                  margin: 1.3em 8em;
+                  margin: -1.5em 9em;
                   .input-text {
                     width: 21em;
                     margin: 1.5em;

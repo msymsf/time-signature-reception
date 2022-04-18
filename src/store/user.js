@@ -25,20 +25,21 @@ const actions = {
     }
   },
   //用户注册
-  async userRegister(params) {
+  async userRegister({ commit }, params) {
     let result = await reqRegister(params);
-    if (result.code == 20000) {
+
+    if (result.data.code == 20000) {
       return "ok";
     } else {
       return Promise.reject(new Error("faile"));
     }
   },
-  //登录
-  async userLogin(params) {
+  //登录业务
+  async userLogin({ commit }, params) {
     let result = await reqUserLogin(params);
-    if (result.code == 200) {
-      // commit("USERLOGIN", result.data.token);
-      // setToken(result.data.token);
+    if (result.code == 20000) {
+      commit("USERLOGIN", result.data.token);
+      setToken(result.data.token);
       return result;
     } else {
       return result;
