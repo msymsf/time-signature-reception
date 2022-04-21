@@ -1163,7 +1163,7 @@
         </div>
       </div>
     </el-header>
-    <el-main style="background-color: #202225">
+    <el-main style="background-color: #202225; overflow: hidden">
       <StudyWay v-show="scene == 0" />
       <Question v-show="scene == 1" />
       <Personal v-show="scene == 2" />
