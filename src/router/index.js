@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "@/views/Home";
+import Start from "@/views/Start";
 
 Vue.use(VueRouter);
 
@@ -44,7 +45,12 @@ VueRouter.prototype.replace = function (location, resolve, reject) {
 const routes = [
   {
     path: "*",
-    redirect: "/home",
+    redirect: "/start",
+  },
+  {
+    path: "/start",
+    name: "Start",
+    component: Start,
   },
   {
     path: "/home",

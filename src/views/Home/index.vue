@@ -3,37 +3,40 @@
     <el-header style="text-align: right; font-size: 12px; height: 50px">
       <ul>
         <li><img src="./images/2.png" alt="" /></li>
-        <li>学习</li>
-        <li>题库</li>
+        <li @click="learn">学习</li>
+        <li @click="question">题库</li>
         <li>竞赛</li>
       </ul>
       <div class="svgs" v-if="userName">
-        <svg
-          t="1648800715971"
-          class="icon"
-          viewBox="0 0 1024 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          p-id="2424"
-          width="32"
-          height="32"
-        >
-          <path
-            d="M657.194667 146.389333a295.808 295.808 0 0 1 145.194666 254.592v163.669334l89.429334 157.44a42.666667 42.666667 0 0 1-37.12 63.744h-182.826667a160 160 0 0 1-319.701333 0H169.322667a42.666667 42.666667 0 0 1-37.12-63.744l89.450666-157.44v-163.669334c0-104.554667 55.189333-201.344 145.173334-254.592a285.141333 285.141333 0 0 1 290.368 0zM624.64 201.472a221.141333 221.141333 0 0 0-225.194667 0 231.808 231.808 0 0 0-113.664 192.512l-0.106666 6.997333v180.565334l-79.701334 140.288 207.466667 0.021333 2.688 61.162667a96 96 0 0 0 191.509333 4.629333l0.298667-4.629333 2.709333-61.162667 207.445334-0.021333-79.68-140.288v-180.565334c0-79.573333-40.810667-153.450667-107.797334-195.84l-5.973333-3.669333z"
-            fill="#e6e2dd"
-            p-id="2425"
-          ></path>
-          <path
-            d="M435.626667 238.549333a32 32 0 1 1 42.709333 47.68c-43.541333 38.997333-66.496 83.754667-77.994667 148.906667a32 32 0 1 1-63.018666-11.136c13.866667-78.570667 43.477333-136.32 98.304-185.450667z"
-            fill="#e6e2dd"
-            p-id="2426"
-          ></path>
-          <path
-            d="M512.021333 106.666667m-42.666666 0a42.666667 42.666667 0 1 0 85.333333 0 42.666667 42.666667 0 1 0-85.333333 0Z"
-            fill="#e6e2dd"
-            p-id="2427"
-          ></path>
-        </svg>
+        <van-badge :content="5">
+          <svg
+            t="1648800715971"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="2424"
+            width="32"
+            height="32"
+          >
+            <path
+              d="M657.194667 146.389333a295.808 295.808 0 0 1 145.194666 254.592v163.669334l89.429334 157.44a42.666667 42.666667 0 0 1-37.12 63.744h-182.826667a160 160 0 0 1-319.701333 0H169.322667a42.666667 42.666667 0 0 1-37.12-63.744l89.450666-157.44v-163.669334c0-104.554667 55.189333-201.344 145.173334-254.592a285.141333 285.141333 0 0 1 290.368 0zM624.64 201.472a221.141333 221.141333 0 0 0-225.194667 0 231.808 231.808 0 0 0-113.664 192.512l-0.106666 6.997333v180.565334l-79.701334 140.288 207.466667 0.021333 2.688 61.162667a96 96 0 0 0 191.509333 4.629333l0.298667-4.629333 2.709333-61.162667 207.445334-0.021333-79.68-140.288v-180.565334c0-79.573333-40.810667-153.450667-107.797334-195.84l-5.973333-3.669333z"
+              fill="#e6e2dd"
+              p-id="2425"
+            ></path>
+            <path
+              d="M435.626667 238.549333a32 32 0 1 1 42.709333 47.68c-43.541333 38.997333-66.496 83.754667-77.994667 148.906667a32 32 0 1 1-63.018666-11.136c13.866667-78.570667 43.477333-136.32 98.304-185.450667z"
+              fill="#e6e2dd"
+              p-id="2426"
+            ></path>
+            <path
+              d="M512.021333 106.666667m-42.666666 0a42.666667 42.666667 0 1 0 85.333333 0 42.666667 42.666667 0 1 0-85.333333 0Z"
+              fill="#e6e2dd"
+              p-id="2427"
+            ></path>
+          </svg>
+        </van-badge>
+
         <!-- 消息下拉框 -->
         <div class="new">
           <el-tabs :tab-position="tabPosition">
@@ -1036,7 +1039,7 @@
                         </svg>
                         <input
                           type="text"
-                          v-model="login.username"
+                          v-model="username"
                           placeholder="请输入用户名"
                           name="username"
                           required
@@ -1060,7 +1063,7 @@
                           ></path>
                         </svg>
                         <input
-                          v-model="login.password"
+                          v-model="password"
                           placeholder="请输入密码"
                           name="password"
                           required
@@ -1068,6 +1071,7 @@
                       </div>
                       <span @click="span1">没有账号，去注册</span>
                       <el-button
+                        type="button"
                         class="btn"
                         :loading="loading"
                         @click="Login"
@@ -1108,7 +1112,7 @@
                     p-id="8597"
                     fill="#cdcdcd"
                   ></path></svg
-                ><span>个人资料</span>
+                ><span @click="personal">个人资料</span>
               </li>
               <li>
                 <svg
@@ -1160,7 +1164,9 @@
       </div>
     </el-header>
     <el-main style="background-color: #202225">
-      <StudyWay />
+      <StudyWay v-show="scene == 0" />
+      <Question v-show="scene == 1" />
+      <Personal v-show="scene == 2" />
     </el-main>
   </el-container>
 </template>
@@ -1168,20 +1174,22 @@
 <script>
 import { login } from "@/api";
 import StudyWay from "./StudyWay/index";
+import Question from "./Question/index.vue";
+import Personal from "./Personal/index.vue";
 
 export default {
   components: {
     StudyWay,
+    Question,
+    Personal,
   },
   data() {
     return {
       tabPosition: "bottom",
       value: true,
       show: false,
-      login: {
-        username: "",
-        password: "",
-      },
+      username: "",
+      password: "",
       loading: false,
       show1: false,
       zhanshi: true,
@@ -1198,6 +1206,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
+      scene: 0,
     };
   },
   computed: {
@@ -1216,6 +1225,15 @@ export default {
     };
   },
   methods: {
+    personal() {
+      this.scene = 2;
+    },
+    learn() {
+      this.scene = 0;
+    },
+    question() {
+      this.scene = 1;
+    },
     showClick() {
       this.zhanshi = true;
       this.zhanshi1 = true;
@@ -1240,14 +1258,14 @@ export default {
     Login() {
       this.loading = true;
       let params = new URLSearchParams();
-      params.append("username", this.login.username);
-      params.append("password", this.login.password);
+      params.append("username", this.username);
+      params.append("password", this.password);
       login(params).then(({ data }) => {
         this.loading = false;
         if (data.flag) {
           this.$store.commit("login", data.data);
           this.$message.success("登录成功");
-          this.$router.push({ path: "/data" });
+          this.$router.push({ path: "/home" });
         } else {
           this.$message.error("登录失败！" + data.message);
         }
@@ -1484,6 +1502,7 @@ export default {
                   .input-text {
                     width: 21em;
                     margin: 2em 1.5em;
+                    color: black;
                     border-bottom: 1px solid #cdcdcd;
                     .icon {
                       position: fixed;
@@ -1569,7 +1588,7 @@ export default {
                   .input-text {
                     width: 21em;
                     margin: 1.5em;
-                    color: #515151;
+                    color: black;
                     border-bottom: 1px solid #cdcdcd;
                     .icon {
                       position: fixed;
