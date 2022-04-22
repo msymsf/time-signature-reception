@@ -110,97 +110,378 @@
                 </svg>
                 <h2>随机一题</h2>
               </div>
-              <el-table
-                :data="
-                  tableData.slice(
-                    (currPage - 1) * pageSize,
-                    currPage * pageSize
-                  )
-                "
-                style="width: 95%; color: white"
-                :default-sort="{ prop: 'date', order: 'descending' }"
-                :cell-style="rowClass"
-                :header-cell-style="headClass"
-              >
-                <el-table-column
-                  header-align="center"
-                  align="center"
-                  prop="src"
-                  label="状态"
+              <div v-show="Index == 0">
+                <el-table
+                  :data="
+                    tableData.slice(
+                      (currPage - 1) * pageSize,
+                      currPage * pageSize
+                    )
+                  "
+                  style="width: 95%; color: white"
+                  :default-sort="{ prop: 'date', order: 'descending' }"
+                  :cell-style="rowClass"
+                  :header-cell-style="headClass"
                 >
-                  <template slot-scope="{ row }">
-                    <img
-                      :src="
-                        row.src === 'true'
-                          ? require('./images/6.png')
-                          : require('./images/7.png')
-                      "
-                    />
-                  </template>
-                </el-table-column>
-                <el-table-column
-                  header-align="center"
-                  align="center"
-                  prop="title"
-                  label="题目"
-                  sortable
-                  width="200%"
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="src"
+                    label="状态"
+                  >
+                    <template slot-scope="{ row }">
+                      <img
+                        :src="
+                          row.src === 'true'
+                            ? require('./images/6.png')
+                            : require('./images/7.png')
+                        "
+                      />
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="title"
+                    label="题目"
+                    sortable
+                    width="200%"
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="key"
+                    label="题解"
+                    sortable
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="rate"
+                    label="通过率"
+                    sortable
+                  ></el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="tough"
+                    label="难度"
+                    sortable
+                  >
+                    <template slot-scope="scope">
+                      <el-tag
+                        :type="
+                          scope.row.tough === '中等'
+                            ? 'success'
+                            : scope.row.tough === '简单'
+                            ? 'primary'
+                            : 'danger'
+                        "
+                        >{{ scope.row.tough }}</el-tag
+                      >
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="frequency"
+                    label="出现频率"
+                  >
+                  </el-table-column>
+                </el-table>
+                <el-pagination
+                  background
+                  style="text-align: center"
+                  layout="prev, pager, next, jumper"
+                  @size-change="handleSizeChange"
+                  @current-change="handleCurrentChange"
+                  :current-page="currPage"
+                  :page-size="pageSize"
+                  :total="tableData.length"
                 >
-                </el-table-column>
-                <el-table-column
-                  header-align="center"
-                  align="center"
-                  prop="key"
-                  label="题解"
-                  sortable
+                </el-pagination>
+              </div>
+              <div v-show="Index == 1">
+                <el-table
+                  :data="
+                    tableData1.slice(
+                      (currPage - 1) * pageSize,
+                      currPage * pageSize
+                    )
+                  "
+                  style="width: 95%; color: white"
+                  :default-sort="{ prop: 'date', order: 'descending' }"
+                  :cell-style="rowClass"
+                  :header-cell-style="headClass"
                 >
-                </el-table-column>
-                <el-table-column
-                  header-align="center"
-                  align="center"
-                  prop="rate"
-                  label="通过率"
-                  sortable
-                ></el-table-column>
-                <el-table-column
-                  header-align="center"
-                  align="center"
-                  prop="tough"
-                  label="难度"
-                  sortable
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="src"
+                    label="状态"
+                  >
+                    <template slot-scope="{ row }">
+                      <img
+                        :src="
+                          row.src === 'true'
+                            ? require('./images/6.png')
+                            : require('./images/7.png')
+                        "
+                      />
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="title"
+                    label="题目"
+                    sortable
+                    width="200%"
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="key"
+                    label="题解"
+                    sortable
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="rate"
+                    label="通过率"
+                    sortable
+                  ></el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="tough"
+                    label="难度"
+                    sortable
+                  >
+                    <template slot-scope="scope">
+                      <el-tag
+                        :type="
+                          scope.row.tough === '中等'
+                            ? 'success'
+                            : scope.row.tough === '简单'
+                            ? 'primary'
+                            : 'danger'
+                        "
+                        >{{ scope.row.tough }}</el-tag
+                      >
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="frequency"
+                    label="出现频率"
+                  >
+                  </el-table-column>
+                </el-table>
+                <el-pagination
+                  background
+                  style="text-align: center"
+                  layout="prev, pager, next, jumper"
+                  @size-change="handleSizeChange"
+                  @current-change="handleCurrentChange"
+                  :current-page="currPage"
+                  :page-size="pageSize"
+                  :total="tableData1.length"
                 >
-                  <template slot-scope="scope">
-                    <el-tag
-                      :type="
-                        scope.row.tough === '中等'
-                          ? 'success'
-                          : scope.row.tough === '简单'
-                          ? 'primary'
-                          : 'danger'
-                      "
-                      >{{ scope.row.tough }}</el-tag
-                    >
-                  </template>
-                </el-table-column>
-                <el-table-column
-                  header-align="center"
-                  align="center"
-                  prop="frequency"
-                  label="出现频率"
+                </el-pagination>
+              </div>
+              <div v-show="Index == 2">
+                <el-table
+                  :data="
+                    tableData2.slice(
+                      (currPage - 1) * pageSize,
+                      currPage * pageSize
+                    )
+                  "
+                  style="width: 95%; color: white"
+                  :default-sort="{ prop: 'date', order: 'descending' }"
+                  :cell-style="rowClass"
+                  :header-cell-style="headClass"
                 >
-                </el-table-column>
-              </el-table>
-              <el-pagination
-                background
-                style="text-align: center"
-                layout="prev, pager, next, jumper"
-                @size-change="handleSizeChange"
-                @current-change="handleCurrentChange"
-                :current-page="currPage"
-                :page-size="pageSize"
-                :total="tableData.length"
-              >
-              </el-pagination>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="src"
+                    label="状态"
+                  >
+                    <template slot-scope="{ row }">
+                      <img
+                        :src="
+                          row.src === 'true'
+                            ? require('./images/6.png')
+                            : require('./images/7.png')
+                        "
+                      />
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="title"
+                    label="题目"
+                    sortable
+                    width="200%"
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="key"
+                    label="题解"
+                    sortable
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="rate"
+                    label="通过率"
+                    sortable
+                  ></el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="tough"
+                    label="难度"
+                    sortable
+                  >
+                    <template slot-scope="scope">
+                      <el-tag
+                        :type="
+                          scope.row.tough === '中等'
+                            ? 'success'
+                            : scope.row.tough === '简单'
+                            ? 'primary'
+                            : 'danger'
+                        "
+                        >{{ scope.row.tough }}</el-tag
+                      >
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="frequency"
+                    label="出现频率"
+                  >
+                  </el-table-column>
+                </el-table>
+                <el-pagination
+                  background
+                  style="text-align: center"
+                  layout="prev, pager, next, jumper"
+                  @size-change="handleSizeChange"
+                  @current-change="handleCurrentChange"
+                  :current-page="currPage"
+                  :page-size="pageSize"
+                  :total="tableData2.length"
+                >
+                </el-pagination>
+              </div>
+              <div v-show="Index == 3">
+                <el-table
+                  :data="
+                    tableData3.slice(
+                      (currPage - 1) * pageSize,
+                      currPage * pageSize
+                    )
+                  "
+                  style="width: 95%; color: white"
+                  :default-sort="{ prop: 'date', order: 'descending' }"
+                  :cell-style="rowClass"
+                  :header-cell-style="headClass"
+                >
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="src"
+                    label="状态"
+                  >
+                    <template slot-scope="{ row }">
+                      <img
+                        :src="
+                          row.src === 'true'
+                            ? require('./images/6.png')
+                            : require('./images/7.png')
+                        "
+                      />
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="title"
+                    label="题目"
+                    sortable
+                    width="200%"
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="key"
+                    label="题解"
+                    sortable
+                  >
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="rate"
+                    label="通过率"
+                    sortable
+                  ></el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="tough"
+                    label="难度"
+                    sortable
+                  >
+                    <template slot-scope="scope">
+                      <el-tag
+                        :type="
+                          scope.row.tough === '中等'
+                            ? 'success'
+                            : scope.row.tough === '简单'
+                            ? 'primary'
+                            : 'danger'
+                        "
+                        >{{ scope.row.tough }}</el-tag
+                      >
+                    </template>
+                  </el-table-column>
+                  <el-table-column
+                    header-align="center"
+                    align="center"
+                    prop="frequency"
+                    label="出现频率"
+                  >
+                  </el-table-column>
+                </el-table>
+                <el-pagination
+                  background
+                  style="text-align: center"
+                  layout="prev, pager, next, jumper"
+                  @size-change="handleSizeChange"
+                  @current-change="handleCurrentChange"
+                  :current-page="currPage"
+                  :page-size="pageSize"
+                  :total="tableData3.length"
+                >
+                </el-pagination>
+              </div>
             </div>
           </div></div
       ></el-col>
@@ -715,113 +996,105 @@ export default {
         {
           src: "true",
           title: "1.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
+          key: "2428",
+          rate: "75.2%",
           tough: "中等",
           frequency: "70%",
         },
         {
-          src: "false",
-          title: "2.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
-        },
-        {
           src: "true",
-          title: "3.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
+          title: "2.闭包",
+          key: "417",
+          rate: "12.5%",
           tough: "困难",
-          frequency: "70%",
+          frequency: "49%",
         },
         {
           src: "false",
-          title: "4.深度遍历二叉树",
-          key: "200",
+          title: "3.display,float,position的关系",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "92%",
+        },
+        {
+          src: "true",
+          title: "4.attribute和property的区别是什么？",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "5.事件委托",
+          key: "5718",
           rate: "52.3%",
           tough: "简单",
           frequency: "70%",
         },
         {
           src: "true",
-          title: "5.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
+          title: "4.类加载过程",
+          key: "541",
+          rate: "78.5%",
           tough: "中等",
           frequency: "70%",
         },
         {
           src: "false",
-          title: "6.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
+          title: "5.JDK 动态代理与 CGLIB 区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
         },
         {
           src: "false",
-          title: "7.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
-        },
-        {
-          src: "false",
-          title: "8.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
-        },
-        {
-          src: "true",
-          title: "9.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
+          title: "1.JavaScript优化",
+          key: "154",
+          rate: "45.2%",
           tough: "中等",
           frequency: "70%",
         },
         {
-          src: "false",
-          title: "10.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
+          src: "true",
+          title: "2.行内元素、块级元素",
+          key: "13",
+          rate: "77.5%",
           tough: "简单",
-          frequency: "70%",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
         },
         {
           src: "true",
-          title: "11.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
           tough: "简单",
-          frequency: "70%",
+          frequency: "66%",
         },
         {
           src: "false",
-          title: "12.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
         },
         {
           src: "true",
           title: "13.深度遍历二叉树",
-          key: "200",
+          key: "452",
           rate: "52.3%",
           tough: "中等",
-          frequency: "70%",
-        },
-        {
-          src: "false",
-          title: "14.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
           frequency: "70%",
         },
         {
@@ -829,29 +1102,13 @@ export default {
           title: "15.深度遍历二叉树",
           key: "200",
           rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
+          tough: "困难",
+          frequency: "30%",
         },
         {
           src: "true",
           title: "16.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
-        },
-        {
-          src: "false",
-          title: "17.深度遍历二叉树",
-          key: "200",
-          rate: "52.3%",
-          tough: "简单",
-          frequency: "70%",
-        },
-        {
-          src: "false",
-          title: "18.深度遍历二叉树",
-          key: "200",
+          key: "810",
           rate: "52.3%",
           tough: "简单",
           frequency: "70%",
@@ -869,7 +1126,7 @@ export default {
           title: "20.深度遍历二叉树",
           key: "200",
           rate: "52.3%",
-          tough: "简单",
+          tough: "困难",
           frequency: "70%",
         },
         {
@@ -893,7 +1150,7 @@ export default {
           title: "23.深度遍历二叉树",
           key: "200",
           rate: "52.3%",
-          tough: "简单",
+          tough: "困难",
           frequency: "70%",
         },
         {
@@ -901,7 +1158,7 @@ export default {
           title: "24.深度遍历二叉树",
           key: "200",
           rate: "52.3%",
-          tough: "简单",
+          tough: "中等",
           frequency: "70%",
         },
         {
@@ -909,8 +1166,734 @@ export default {
           title: "25.深度遍历二叉树",
           key: "200",
           rate: "52.3%",
+          tough: "困难",
+          frequency: "70%",
+        },
+      ],
+      tableData1: [
+        {
+          src: "false",
+          title: "1.JavaScript优化",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "2.行内元素、块级元素",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
+        },
+        {
+          src: "true",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
+          tough: "简单",
+          frequency: "66%",
+        },
+        {
+          src: "false",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
+        },
+        {
+          src: "false",
+          title: "6.display,float,position的关系",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "7.attribute和property的区别是什么？",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
+        },
+        {
+          src: "true",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
+          tough: "简单",
+          frequency: "66%",
+        },
+        {
+          src: "false",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
+        },
+        {
+          src: "false",
+          title: "1.JavaScript优化",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "2.行内元素、块级元素",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
+        },
+        {
+          src: "true",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
+          tough: "简单",
+          frequency: "66%",
+        },
+        {
+          src: "false",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
+        },
+        {
+          src: "false",
+          title: "1.JavaScript优化",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "2.行内元素、块级元素",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
+        },
+        {
+          src: "true",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
+          tough: "简单",
+          frequency: "66%",
+        },
+        {
+          src: "false",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
+        },
+        {
+          src: "false",
+          title: "1.JavaScript优化",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "2.行内元素、块级元素",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
+        },
+        {
+          src: "true",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
+          tough: "简单",
+          frequency: "66%",
+        },
+        {
+          src: "false",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
+        },
+        {
+          src: "false",
+          title: "1.JavaScript优化",
+          key: "154",
+          rate: "45.2%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "2.行内元素、块级元素",
+          key: "13",
+          rate: "77.5%",
+          tough: "简单",
+          frequency: "88%",
+        },
+        {
+          src: "false",
+          title: "3.wxml与标准的html的异同",
+          key: "24",
+          rate: "32.5%",
+          tough: "困难",
+          frequency: "48%",
+        },
+        {
+          src: "true",
+          title: "4. v-show与v-if区别",
+          key: "1",
+          rate: "65.7%",
+          tough: "简单",
+          frequency: "66%",
+        },
+        {
+          src: "false",
+          title: "5.块级格式化上下文BFC",
+          key: "45",
+          rate: "65.4%",
+          tough: "中等",
+          frequency: "40%",
+        },
+      ],
+      tableData2: [
+        {
+          src: "true",
+          title: "1.如何设计HashMap",
+          key: "541",
+          rate: "78.5%",
           tough: "简单",
           frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "2.并发类库提供的线程池实现",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "3.GC调优",
+          key: "541",
+          rate: "78.5%",
+          tough: "简单",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "4.类加载过程",
+          key: "541",
+          rate: "78.5%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "5.JDK 动态代理与 CGLIB 区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "6.双亲委派",
+          key: "541",
+          rate: "78.5%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "7.JDK 和 JRE 的区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "false",
+          title: "8.序列化和反序列化",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "1.如何设计如何设计",
+          key: "541",
+          rate: "78.5%",
+          tough: "简单",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "2.并发类库提供的线程池实现",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "3.GC调优",
+          key: "541",
+          rate: "78.5%",
+          tough: "简单",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "4.类加载过程",
+          key: "541",
+          rate: "78.5%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "5.JDK 动态代理与 CGLIB 区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "6.双亲委派",
+          key: "541",
+          rate: "78.5%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "7.JDK 和 JRE 的区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "false",
+          title: "8.序列化和反序列化",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "1.如何设计如何设计",
+          key: "541",
+          rate: "78.5%",
+          tough: "简单",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "2.并发类库提供的线程池实现",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "3.GC调优",
+          key: "541",
+          rate: "78.5%",
+          tough: "简单",
+          frequency: "70%",
+        },
+        {
+          src: "true",
+          title: "4.类加载过程",
+          key: "541",
+          rate: "78.5%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "5.JDK 动态代理与 CGLIB 区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "true",
+          title: "6.双亲委派",
+          key: "541",
+          rate: "78.5%",
+          tough: "中等",
+          frequency: "70%",
+        },
+        {
+          src: "false",
+          title: "7.JDK 和 JRE 的区别",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+        {
+          src: "false",
+          title: "8.序列化和反序列化",
+          key: "351",
+          rate: "45.2%",
+          tough: "困难",
+          frequency: "65%",
+        },
+      ],
+      tableData3: [
+        {
+          src: "false",
+          title: "1.数据产生方式的改变",
+          key: "234",
+          rate: "42.5%",
+          tough: "困难",
+          frequency: "45%",
+        },
+        {
+          src: "false",
+          title: "2.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "3.云计算按照服务类型",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "4.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "5.云计算技术体系结构",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "true",
+          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
+          key: "14",
+          rate: "74.5%",
+          tough: "困难",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "1.数据产生方式的改变",
+          key: "234",
+          rate: "42.5%",
+          tough: "困难",
+          frequency: "45%",
+        },
+        {
+          src: "false",
+          title: "2.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "3.云计算按照服务类型",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "4.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "5.云计算技术体系结构",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "true",
+          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
+          key: "14",
+          rate: "74.5%",
+          tough: "困难",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "1.数据产生方式的改变",
+          key: "234",
+          rate: "42.5%",
+          tough: "困难",
+          frequency: "45%",
+        },
+        {
+          src: "false",
+          title: "2.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "3.云计算按照服务类型",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "4.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "5.云计算技术体系结构",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "true",
+          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
+          key: "14",
+          rate: "74.5%",
+          tough: "困难",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "1.数据产生方式的改变",
+          key: "234",
+          rate: "42.5%",
+          tough: "困难",
+          frequency: "45%",
+        },
+        {
+          src: "false",
+          title: "2.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "3.云计算按照服务类型",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "4.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "5.云计算技术体系结构",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "true",
+          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
+          key: "14",
+          rate: "74.5%",
+          tough: "困难",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "1.数据产生方式的改变",
+          key: "234",
+          rate: "42.5%",
+          tough: "困难",
+          frequency: "45%",
+        },
+        {
+          src: "false",
+          title: "2.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "3.云计算按照服务类型",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "4.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "5.云计算技术体系结构",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "true",
+          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
+          key: "14",
+          rate: "74.5%",
+          tough: "困难",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "1.数据产生方式的改变",
+          key: "234",
+          rate: "42.5%",
+          tough: "困难",
+          frequency: "45%",
+        },
+        {
+          src: "false",
+          title: "2.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "3.云计算按照服务类型",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "false",
+          title: "4.新摩尔定律的含义",
+          key: "150",
+          rate: "53.2%",
+          tough: "中等",
+          frequency: "54%",
+        },
+        {
+          src: "true",
+          title: "5.云计算技术体系结构",
+          key: "14",
+          rate: "74.5%",
+          tough: "简单",
+          frequency: "76%",
+        },
+        {
+          src: "true",
+          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
+          key: "14",
+          rate: "74.5%",
+          tough: "困难",
+          frequency: "76%",
         },
       ],
       pageSize: 12,
