@@ -25,7 +25,7 @@
       <el-button class="btn">编辑个人资料</el-button>
       <div class="brief">
         <h1>个人简介</h1>
-        <span>无</span>
+        <img src="./images/1.png" alt="" />
         <div class="line"></div>
       </div>
       <div class="achieve">
@@ -368,8 +368,8 @@
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             p-id="5469"
-            width="80"
-            height="80"
+            width="100"
+            height="100"
           >
             <path
               d="M709.30101 955.733333l-389.688889-1.422222L76.412121 628.622222l89.6-405.333333L518.723232 45.511111 870.012121 227.555556l85.333334 405.333333z"
@@ -685,13 +685,13 @@ export default {
 .personal {
   position: relative;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   z-index: 0;
   .top {
     width: 100%;
     img {
       position: relative;
-      left: -36.5em;
+      left: -43em;
       width: 70px;
       height: 70px;
       border-radius: 10px;
@@ -715,7 +715,7 @@ export default {
       position: absolute;
       border-radius: 10px;
       top: 0.5em;
-      left: 58em;
+      left: 71.5em;
       width: 250px;
       height: 90px;
       background-color: #36393f;
@@ -730,7 +730,7 @@ export default {
   .my {
     display: flex;
     margin-top: -3em;
-    width: 180px;
+    width: 200px;
     height: 81em;
     background-color: #36393f;
     border-radius: 10px;
@@ -739,7 +739,7 @@ export default {
     list-style-type: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     .m {
-      margin: -4em 2.2em;
+      margin: -4em 2.6em;
       .text-2 {
         margin: -11.5em 0;
       }
@@ -753,7 +753,7 @@ export default {
     .btn {
       position: absolute;
       display: inline-block;
-      width: 155px;
+      width: 175px;
       height: 35px;
       background-color: #e3e3e6;
       color: black;
@@ -770,9 +770,14 @@ export default {
         height: 2.2em;
         font-size: 15px;
       }
+      img {
+        margin: -0.6em;
+        width: 2em;
+        height: 2em;
+      }
       .line {
         margin: -4.5em 3.4em;
-        width: 150%;
+        width: 170%;
         height: 0.5px;
         background: linear-gradient(
           135deg,
@@ -800,7 +805,7 @@ export default {
         }
         .icon1 {
           position: absolute;
-          margin: 60px 10px;
+          margin: 60px 15px;
         }
         h3 {
           margin: -13.3em 0;
@@ -813,7 +818,7 @@ export default {
       }
       .line {
         margin: 6.9em 0.5em;
-        width: 160%;
+        width: 180%;
         height: 0.5px;
         background: linear-gradient(
           135deg,
@@ -826,9 +831,9 @@ export default {
     .course {
       position: absolute;
       margin-top: 35em;
-      width: 140px;
+      width: 150px;
       h1 {
-        margin-left: -5.5em;
+        margin-left: -6.2em;
         font-size: 15px;
       }
       .el-button {
@@ -857,7 +862,7 @@ export default {
       }
       .line {
         margin: -23.5em 0.7em;
-        width: 115%;
+        width: 120%;
         height: 0.5px;
         background: linear-gradient(
           135deg,
@@ -915,7 +920,7 @@ export default {
             top: -4em;
             left: 0.5em;
             display: block;
-            width: 3em;
+            width: 3.5em;
             text-align: center;
             border: none;
             border-radius: 10px;
@@ -933,28 +938,28 @@ export default {
             position: absolute;
             color: #adb0b8;
             top: 8.4em;
-            left: 5.3em;
+            left: 5.8em;
           }
           .h5 {
             width: 20px;
             position: absolute;
             color: #adb0b8;
             top: 8.4em;
-            left: 11.8em;
+            left: 12.3em;
           }
           .h6 {
             width: 20px;
             position: absolute;
             color: #adb0b8;
             top: 14.5em;
-            left: 5.3em;
+            left: 5.8em;
           }
           .h7 {
             width: 20px;
             position: absolute;
             color: #adb0b8;
             top: 14.5em;
-            left: 11.8em;
+            left: 12.3em;
           }
           .h8 {
             width: 20px;
@@ -981,7 +986,7 @@ export default {
             width: 6em;
           }
           .s {
-            margin: 18.7em 0;
+            margin: 18.7em 1em;
             color: white;
           }
         }
@@ -998,47 +1003,48 @@ export default {
         margin-right: 1.5em;
         margin-top: 5em;
         float: left;
-        width: 370px;
+        width: 435px;
         height: 180px;
         border-radius: 10px;
         background-color: #36393f;
         h1 {
           color: white;
-          margin: -4em 1em;
+          margin: -3.5em 1.5em;
           float: left;
           font-size: 14px;
           color: #cdcfd3;
         }
         .h1 {
           position: absolute;
-          margin: -0.4em 1em;
+          margin: -1.2em 1.5em;
         }
         .icon {
           position: absolute;
           top: 15.75em;
+          margin-left: -2em;
         }
         .icon1 {
           position: absolute;
           top: 6.5em;
-          margin-left: 2.5em;
+          margin-left: 3em;
         }
         .h2 {
           position: absolute;
           color: white;
           top: 8em;
-          margin-left: 1.5em;
+          margin-left: 2em;
         }
         .circleBox {
           position: relative;
-          top: 4.5em;
-          left: -6.5em;
+          top: 4.8em;
+          left: -6em;
           text-align: center;
           width: 200px;
           .circleCenter {
             color: white;
             position: absolute;
             top: -2.7em;
-            left: 8em;
+            left: 8.5em;
             font-size: 15px;
             .center {
               margin-top: -13em;
@@ -1082,7 +1088,7 @@ export default {
             }
             .el-progress {
               position: relative;
-              width: 220px;
+              width: 265px;
               margin: -5.2em 18.2em;
               /deep/ .el-progress__text {
                 color: white;
@@ -1097,22 +1103,22 @@ export default {
           position: relative;
           color: white;
           top: -2em;
-          left: -9.7em;
+          left: -12em;
           font-size: 13px;
         }
         .h5 {
-          margin: -10.5em 1.4em;
+          margin: -10em 1.4em;
         }
       }
     }
     .learn {
       position: relative;
-      width: 63.3em;
+      width: 74em;
       height: 21em;
       border-radius: 10px;
       background-color: #36393f;
       top: 14em;
-      left: 16.5em;
+      left: 18em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       .top {
         span {
@@ -1146,19 +1152,19 @@ export default {
       }
       .charts {
         position: absolute;
-        margin: 2em 0;
-        width: 60em;
+        margin: 2em 3.5em;
         height: 20em;
+        width: 65em;
       }
     }
     .bottom {
       position: relative;
-      width: 63.3em;
-      height: 30em;
+      width: 74em;
+      height: 41em;
       border-radius: 10px;
       background-color: #36393f;
       top: 16em;
-      left: 16.5em;
+      left: 18em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       color: white;
       .btm {
@@ -1167,7 +1173,7 @@ export default {
         height: 4em;
         line-height: 4em;
         float: left;
-        left: -13em;
+        left: -15em;
         margin: 2em 0;
         border-radius: 7px;
         .icon {

@@ -15,7 +15,6 @@ const mutations = {
 const actions = {
   //获取验证码
   async getCode({ commit }, email) {
-    console.log(email);
     let result = await reqCode(email.email);
     if (result.code == 20000) {
       commit("CODE", result.data);

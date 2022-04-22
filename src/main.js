@@ -9,7 +9,9 @@ import { Overlay } from "vant";
 import VeeValidate from "vee-validate";
 import echarts from "echarts";
 import { Badge } from "vant";
+import { Calendar } from "vant";
 
+Vue.use(Calendar);
 Vue.use(Badge);
 
 Vue.prototype.$echarts = echarts;

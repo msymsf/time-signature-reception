@@ -1206,7 +1206,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
-      scene: 0,
+      scene: 1,
     };
   },
   computed: {
@@ -1350,7 +1350,7 @@ export default {
   .el-header {
     color: #333;
     text-align: center;
-    margin: 0 10em;
+    margin: 0 5.5em;
     ul {
       float: left;
       color: white;
@@ -1368,7 +1368,7 @@ export default {
     }
     .svgs {
       position: relative;
-      left: 75.5em;
+      left: 88em;
       top: -3.2em;
       width: 40px;
       &::after {
@@ -1442,7 +1442,7 @@ export default {
     }
     .right {
       position: absolute;
-      left: 94em;
+      left: 102em;
       top: -0.1em;
       width: 40px;
       &:hover .image {
@@ -1451,7 +1451,7 @@ export default {
       .btn {
         width: 150px;
         color: white;
-        margin: 1.5em -4em;
+        margin: 1.5em -6.5em;
         h1 {
           font-size: 16px;
           color: white;

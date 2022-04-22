@@ -1,11 +1,11 @@
 <template>
   <div class="studyway">
     <el-row :gutter="25">
-      <el-col :span="16">
+      <el-col :span="17">
         <div class="slideshow">
-          <el-carousel :interval="4000" type="card" height="200px">
+          <el-carousel :interval="4000" type="card" height="210px">
             <el-carousel-item v-for="item in imagebox" :key="item.id">
-              <img :src="item.idView" class="image" />
+              <img :src="item.idView" />
             </el-carousel-item>
           </el-carousel>
         </div>
@@ -19,29 +19,29 @@
             >
           </div>
           <svg
-            t="1648825089896"
+            t="1650591736588"
             class="icons"
             viewBox="0 0 1024 1024"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
-            p-id="5930"
-            width="30"
-            height="30"
+            p-id="2152"
+            width="80"
+            height="80"
           >
             <path
-              d="M512 492.8m-96 0a1.5 1.5 0 1 0 192 0 1.5 1.5 0 1 0-192 0Z"
-              p-id="5931"
-              fill="#e6e2dd"
+              d="M170.666667 512a85.333333 85.333333 0 1 0 170.666666 0 85.333333 85.333333 0 1 0-170.666666 0Z"
+              fill="#e6e6e6"
+              p-id="2153"
             ></path>
             <path
-              d="M224 492.8m-96 0a1.5 1.5 0 1 0 192 0 1.5 1.5 0 1 0-192 0Z"
-              p-id="5932"
-              fill="#e6e2dd"
+              d="M426.666667 512a85.333333 85.333333 0 1 0 170.666666 0 85.333333 85.333333 0 1 0-170.666666 0Z"
+              fill="#e6e6e6"
+              p-id="2154"
             ></path>
             <path
-              d="M800 492.8m-96 0a1.5 1.5 0 1 0 192 0 1.5 1.5 0 1 0-192 0Z"
-              p-id="5933"
-              fill="#e6e2dd"
+              d="M682.666667 512a85.333333 85.333333 0 1 0 170.666666 0 85.333333 85.333333 0 1 0-170.666666 0Z"
+              fill="#e6e6e6"
+              p-id="2155"
             ></path>
           </svg>
           <ul v-show="Index == 0">
@@ -130,6 +130,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -221,6 +223,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -308,6 +312,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -399,6 +405,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -486,6 +494,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -577,6 +587,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -664,6 +676,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -755,6 +769,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -842,6 +858,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -933,6 +951,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -1020,6 +1040,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -1111,6 +1133,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -1198,6 +1222,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -1289,6 +1315,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -1376,6 +1404,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -1467,6 +1497,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -1556,6 +1588,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -1643,6 +1677,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -1736,6 +1772,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -1823,6 +1861,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -1914,6 +1954,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2001,6 +2043,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -2092,6 +2136,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2179,6 +2225,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -2270,6 +2318,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2359,6 +2409,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2446,6 +2498,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -2539,6 +2593,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2626,6 +2682,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -2717,6 +2775,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2804,6 +2864,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -2895,6 +2957,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -2982,6 +3046,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -3075,6 +3141,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -3162,6 +3230,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -3253,6 +3323,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -3340,6 +3412,8 @@
                   ></path>
                 </svg>
                 <h3>围观讨论</h3>
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
               </button>
@@ -3431,6 +3505,8 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
             <li>
@@ -3520,19 +3596,21 @@
                 <h3>围观讨论</h3>
                 <img class="image2" src="../images/1.jpg" alt="" />
                 <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
+                <img class="image2" src="../images/1.jpg" alt="" />
               </button>
             </li>
           </ul>
         </div>
       </el-col>
-      <el-col :span="7">
+      <el-col :span="6">
         <div class="progress">
           <h1>我的进度（50%）</h1>
           <el-progress
             :text-inside="true"
             :stroke-width="15"
             :percentage="50"
-            style="width: 230px; margin: -1em 2em"
+            style="width: 255px; margin: -8em 2em"
           ></el-progress>
           <div class="charts" ref="charts"></div>
         </div>
@@ -3548,7 +3626,7 @@
                 :text-inside="true"
                 :stroke-width="15"
                 :percentage="50"
-                style="width: 120px"
+                style="width: 150px"
                 class="p1"
               ></el-progress>
             </div>
@@ -3561,7 +3639,7 @@
                 :text-inside="true"
                 :stroke-width="15"
                 :percentage="80"
-                style="width: 120px"
+                style="width: 150px"
                 class="p2"
               ></el-progress>
             </div>
@@ -3574,8 +3652,21 @@
                 :text-inside="true"
                 :stroke-width="15"
                 :percentage="30"
-                style="width: 120px"
+                style="width: 150px"
                 class="p1"
+              ></el-progress>
+            </div>
+            <div class="c">
+              <div class="image">
+                <img src="../images/26.png" alt="" />
+              </div>
+              <h2 class="h2">Linux(60%)</h2>
+              <el-progress
+                :text-inside="true"
+                :stroke-width="15"
+                :percentage="60"
+                style="width: 150px"
+                class="p2"
               ></el-progress>
             </div>
           </div>
@@ -3667,45 +3758,40 @@ export default {
   position: relative;
   padding: 1em;
   margin: 0em auto;
-  width: 65%;
+  width: 80%;
   color: white;
   z-index: 0;
   .el-row {
     height: 50em;
     .slideshow {
-      padding: 1em 0;
-      border-radius: 16px;
-      background-color: #36393f;
-      .el-carousel {
-        height: 17em;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-        /deep/ .el-carousel__arrow i {
-          position: absolute;
-          margin: -0.5em;
-        }
-        /deep/ .el-carousel__indicators--outside {
-          position: absolute;
-          top: 0em;
-          display: none;
-        }
-        .el-carousel__item h3 {
-          color: #475669;
-          font-size: 14px;
-          opacity: 0.75;
-          line-height: 200px;
-          margin: 0;
-        }
+      padding: 0.7em 0;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      /deep/ .el-carousel__arrow i {
+        position: absolute;
+        margin: -0.5em;
+      }
+      /deep/ .el-carousel__indicators--outside {
+        position: absolute;
+        top: 0em;
+        display: none;
+      }
+      .el-carousel__item h3 {
+        color: #475669;
+        font-size: 14px;
+        opacity: 0.75;
+        line-height: 200px;
+        margin: 0;
+      }
 
-        .el-carousel__item:nth-child(2n) {
-          background-color: #99a9bf;
-        }
+      .el-carousel__item:nth-child(2n) {
+        background-color: #99a9bf;
+      }
 
-        .el-carousel__item:nth-child(2n + 1) {
-          background-color: #d3dce6;
-        }
+      .el-carousel__item:nth-child(2n + 1) {
+        background-color: #d3dce6;
       }
     }
     .way {
@@ -3721,16 +3807,16 @@ export default {
       }
       .b {
         position: relative;
-        left: 6.5em;
+        left: 7em;
         float: left;
-        margin: -3.7em 0em;
+        margin: -3.7em 0;
         .el-button {
           display: inline-block;
-          margin: 0 0.5em;
+          margin: 0 1.5em;
           background-color: #292c32;
           border: none;
-          width: 90px;
-          height: 37px;
+          width: 100px;
+          height: 40px;
           border-radius: 20px;
         }
         .b1 {
@@ -3744,19 +3830,19 @@ export default {
       }
       .icons {
         position: absolute;
-        width: 25px;
-        height: 25px;
-        margin: 2em 3em;
+        width: 30px;
+        height: 30px;
+        margin: 1.5em 3.5em;
       }
       ul {
         float: left;
-        margin: 7em -35em;
+        margin: 7em -47.3em;
         width: 109%;
         li {
           float: left;
-          width: 14em;
-          height: 13.5em;
-          margin: 0 3.8em 1.5em 0;
+          width: 19.8em;
+          height: 15.5em;
+          margin: 0 2.5em 2em 0;
           background-color: #36393f;
           border-radius: 15px;
           &:hover {
@@ -3765,32 +3851,33 @@ export default {
           }
           .image1 {
             position: absolute;
-            margin: 1em -5.5em;
-            width: 45px;
-            height: 45px;
+            margin: 1.5em -8.5em;
+            width: 50px;
+            height: 50px;
           }
           h1 {
-            margin: -0.3em 1em;
-            font-size: 17px;
+            margin: 0.5em 1.2em;
+            font-size: 18px;
           }
           span {
             position: absolute;
-            margin: 1.6em -5.5em;
+            margin: 2.7em -8.3em;
           }
           h2 {
+            position: absolute;
             font-size: 10px;
-            margin: 1.9em 7.5em;
+            margin: 3.3em 8em;
           }
           .icon1 {
             position: absolute;
-            margin: -8.9em 3em;
+            margin: 7em 1em;
           }
           button {
-            width: 12em;
-            height: 2.5em;
-            line-height: 2.5em;
+            width: 16.5em;
+            height: 3em;
+            line-height: 3em;
             position: absolute;
-            margin: -6.5em -6em;
+            margin: 11em -8.5em;
             border: none;
             border-radius: 10px;
             background-image: -moz-linear-gradient(
@@ -3811,47 +3898,49 @@ export default {
               rgb(200, 244, 255)
             );
             .icon {
-              margin: 0.6em 0 0 1em;
+              margin: 0.7em 0 0 1em;
               float: left;
+              width: 20px;
+              height: 20px;
             }
             h3 {
               float: left;
               margin: 0 0 0 1.2em;
-              font-size: 5px;
+              font-size: 10px;
               color: #256efb;
             }
             img {
-              width: 1.5em;
-              height: 1.5em;
+              width: 2em;
+              height: 2em;
               border-radius: 50%;
-              margin: 0.5em 0.5em 0 0;
+              margin: 0.5em -0.5em 0 0;
             }
           }
         }
       }
     }
     .progress {
-      position: absolute;
       border-radius: 16px;
       background-color: #36393f;
-      height: 19em;
+      width: 25.5em;
+      height: 26em;
       h1 {
-        margin: -3.7em 0;
+        position: relative;
+        top: -3em;
         font-size: 15px;
         color: #e2e3e7;
       }
       .charts {
-        margin: -1.5em 0;
-        width: 270px;
-        height: 200px;
+        width: 260px;
+        height: 260px;
+        margin: 7em 1.5em;
       }
     }
     .course {
-      position: fixed;
-      margin: 20.5em 0;
+      margin: 1.5em 0;
       border-radius: 16px;
-      width: 23.2em;
-      height: 33em;
+      width: 25.5em;
+      height: 42.5em;
       background-color: #36393f;
       h1 {
         position: absolute;
@@ -3864,7 +3953,7 @@ export default {
         margin-top: 2.5em;
         .c {
           border-radius: 16px;
-          width: 20em;
+          width: 22em;
           height: 7.5em;
           margin: 2em 1.5em;
           background-color: #292c32;
@@ -3889,19 +3978,19 @@ export default {
           }
           .h1 {
             position: absolute;
-            margin: -3em 6em;
+            margin: -3em 6.5em;
           }
           .p1 {
             position: absolute;
-            margin: 4.5em 7.5em;
+            margin: 4.5em 7.8em;
           }
           .h2 {
             position: absolute;
-            margin: -3.5em 6.2em;
+            margin: -3em 6.7em;
           }
           .p2 {
             position: absolute;
-            margin: 4em 7.7em;
+            margin: 4.5em 7.7em;
           }
         }
       }
