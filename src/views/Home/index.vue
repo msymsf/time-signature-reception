@@ -1209,7 +1209,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
-      scene: 3,
+      scene: 0,
     };
   },
   computed: {
