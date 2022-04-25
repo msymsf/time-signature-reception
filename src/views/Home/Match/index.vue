@@ -39,11 +39,113 @@
       </div>
     </div>
     <div class="cont">
-      <el-carousel :interval="4000" type="card" height="500px">
-        <el-carousel-item v-for="item in imagebox" :key="item.id">
-          <img :src="item.idView" />
-        </el-carousel-item>
-      </el-carousel>
+      <div class="left">
+        <el-carousel :interval="4000" type="card" height="400px">
+          <el-carousel-item v-for="item in imagebox" :key="item.id">
+            <img :src="item.idView" />
+          </el-carousel-item>
+        </el-carousel>
+        <div class="bottom">
+          <svg
+            t="1650874306759"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="19371"
+            width="64"
+            height="64"
+          >
+            <path
+              d="M1014.31475 168.3l-50 22.5c-2.3 1-5 0.7-6.9-0.8l-50.2-38.9c-0.2-0.2-0.6-0.5-0.8-0.7l-51.7-54.1c-1.1-1.1-2.7-1.9-4.3-2l-33.6-3c-1.5-0.1-3.1 0.2-4.3 1.1l-28.4 18.7c-1.4 0.9-2.4 2.3-2.8 3.8l-19.7 66.9c-0.6 2-2 3.6-4 4.4l-22.5 9c-2.6 1-4.3 3.5-4.3 6.4v23.1c0 3.2 2.3 6 5.3 6.7l46.1 9.9c5.9 1.3 7.4 9.1 2.3 12.4l-44.8 29c-0.2 0.1-0.5 0.3-0.7 0.5l-97.1 80.9c-1.1 1-2.6 1.5-4.1 1.6l-43.4 1.6c-0.9 0-1.7 0.2-2.5 0.6l-42.1 18.7c-1.8 0.8-4 0.8-5.7-0.1l-56-27.1c-0.7-0.3-1.4-0.6-2.2-0.7l-73.4-8.8c-2.5-0.3-4.6-1.9-5.5-4.2l-10.4-25.4c-0.7-1.6-1.8-2.8-3.4-3.5l-63.4-30.5c-2.2-1-3.6-3.1-3.9-5.5l-1.3-13.7v-0.8l0.8-29c0-1.4-0.3-2.6-1-3.8l-27-43.1c-1.9-3.1-6-4.1-9.2-2.3l-43.9 26.1c-0.5 0.3-0.9 0.7-1.4 1l-9.8 9.8c-1.5 1.5-3.6 2.2-5.8 1.9l-22.3-3.1c-3-0.5-5.9 1.3-7.2 4l-10.6 23.7c-1.1 2.5-3.6 4.1-6.4 4l-28.8-0.7c-3.1-0.1-5.8 1.9-6.7 4.8l-16.2 52.7c-0.7 2.4-2.7 4.2-5.1 4.7l-76.7 16.2c-0.3 0.1-0.7 0.1-1 0.3L4.41475 349.2c-3.1 1.1-4.9 4.3-4.3 7.6l3.2 17.6c0.1 0.5 0.2 0.9 0.3 1.3l27.9 70.8c0 0.1 0.1 0.2 0.1 0.3 1.6 3.4 25.9 56 25.6 61.2-0.3 4.4-12.4 35.5-16.6 46-0.9 2.2-0.6 4.7 0.8 6.5l10.9 15c0.3 0.5 0.7 0.9 1.1 1.3l91.7 76.5c0.5 0.5 1 0.7 1.6 1L288.41475 717c1.4 0.6 2.8 0.7 4.2 0.5l85-18.5c1.6-0.3 3.3-0.1 4.8 0.7l33.1 18.2c2.8 1.6 4.2 4.9 3.2 8l-20.1 65.4c-0.8 2.6 0 5.5 2.2 7.2l72.9 61.8c1.9 1.6 4.6 2 6.9 1.1l89.6-35.6c1.9-0.8 4.2-0.6 6 0.6l58.4 35.6c0.2 0.1 0.3 0.2 0.6 0.3l26.2 19.6c0.6 0.5 1.3 0.8 1.9 1l11.5 3.8c4.1 1.4 8.4-1.4 8.9-5.7l1.3-11.9c0.2-2.2 1.5-4.2 3.5-5.2l146.4-80.8c1.1-0.7 2.2-1.6 2.7-2.8l52.1-100.6c0.6-1 0.8-2.2 0.8-3.3l-2.4-80.3c0-1.5-0.6-3-1.6-4.1l-31-37.4-22.2-28.1c-1.9-2.5-1.9-6 0.1-8.5l34-41.4c0.7-0.8 1.5-1.4 2.4-1.8 5.7-2.7 5-11-1.1-12.7l-15.6-4.3c-0.6-0.1-1.1-0.2-1.8-0.2h-41.8c-2.2 0-4.2-1-5.5-2.7l-10.2-14.1c-2.2-3-1.6-7.2 1.3-9.4l50.5-39.6c4.6-3.6 11.3-0.1 11 5.7l-0.5 9c-0.2 5.1 4.9 8.6 9.6 6.6l21.4-9.6c0.7-0.3 1.3-0.7 1.7-1.1l100.6-89.6c1.3-1.1 2.2-2.7 2.3-4.6l4.4-53.5c0.2-3.4 3.1-6.1 6.5-6.3l10.1-0.3c3.5-0.1 6.3-2.8 6.5-6.4l4.8-66.1c0.3-5.7-5-9.5-9.7-7.3zM891.41475 760.5l-14.6 44.4 18.8 26.4 14.6-28.1 11.2-29.8-7.7-21.3-22.3 8.4zM654.71475 902.9l-20.5 12.7 14.6 17.1 18.8-4.2L689.01475 908l-6.8-11.9-27.5 6.8z"
+              fill="#dbdbdb"
+              p-id="19372"
+            ></path>
+          </svg>
+          <h1>全国排名</h1>
+          <li class="li_1">
+            <img src="./images/20.png" alt="" />
+            <button><span>int54</span></button>
+            <svg
+              t="1650887843333"
+              class="icon1"
+              viewBox="0 0 1067 1024"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              p-id="20101"
+              width="32"
+              height="32"
+            >
+              <path
+                d="M474.852327 657.713937c-5.753512-1.063149-11.444485-2.251374-17.10419-3.627214-0.125076-0.031269-0.218884-0.062538-0.34396-0.062538-11.913521-2.939294-23.514352-6.660315-34.802491-11.069256-0.562844-0.218884-1.156956-0.469036-1.7198-0.68792-5.440821-2.157567-10.787834-4.44021-16.041041-6.910468-0.031269-0.031269-0.062538-0.031269-0.125076-0.062538a285.283498 285.283498 0 0 1-31.831929-17.479419c-0.34396-0.218884-0.656651-0.437767-1.00061-0.656651a309.188714 309.188714 0 0 1-14.633932-9.974838l-78.516673 217.413949 96.308782-32.300965 34.052034 87.272017 85.896177-218.883596c-6.003664-0.656651-11.913521-1.532185-17.79211-2.564065-0.750458-0.125076-1.563454-0.281422-2.345181-0.406498zM696.769024 606.870404c-1.188225 0.875534-2.40772 1.7198-3.627214 2.595334-3.627214 2.564065-7.285697 5.034323-11.006718 7.442043-1.094418 0.68792-2.188836 1.407109-3.283254 2.126297a289.482936 289.482936 0 0 1-30.674972 16.603885c-0.719189 0.312691-1.407109 0.625382-2.126298 0.969341a273.010382 273.010382 0 0 1-15.196775 6.410163c-0.406498 0.156345-0.812996 0.312691-1.219495 0.500305a283.917039 283.917039 0 0 1-35.55295 11.006718c-0.093807 0.031269-0.218884 0.062538-0.31269 0.062538-6.128741 1.469647-12.32002 2.72041-18.573837 3.78356l86.834249 221.228777 40.524735-85.083181 89.836081 30.143398-82.331501-227.95163c-4.346403 3.470868-8.786613 6.879199-13.289361 10.162452zM526.790277 126.264566c-136.645902 0-247.8075 111.161598-247.807499 247.807499s111.161598 247.8075 247.807499 247.8075 247.8075-111.161598 247.8075-247.8075-111.161598-247.8075-247.8075-247.807499z m0 418.505435c-94.119946 0-170.697936-76.577989-170.697935-170.697936s76.577989-170.697936 170.697935-170.697935 170.697936 76.577989 170.697936 170.697935-76.54672 170.697936-170.697936 170.697936z"
+                fill="#D81234"
+                p-id="20102"
+              ></path>
+              <path
+                d="M526.790277 223.667766c-82.925614 0-150.404299 67.478686-150.404299 150.404299 0 82.925614 67.478686 150.404299 150.404299 150.4043 82.925614 0 150.404299-67.478686 150.4043-150.4043 0-82.925614-67.447417-150.404299-150.4043-150.404299z m45.840479 220.947356l-45.840479-24.108465-45.840479 24.108465 8.755344-51.062416-37.085135-36.147063 51.250031-7.442042 22.920239-46.434592 22.92024 46.434592 51.25003 7.442042-37.085135 36.147063 8.755344 51.062416z"
+                fill="#D81234"
+                p-id="20103"
+              ></path>
+            </svg>
+          </li>
+          <li class="li_2">
+            <img src="./images/20.png" alt="" />
+            <button><span>boby12</span></button>
+          </li>
+          <li class="li_3">
+            <img src="./images/20.png" alt="" />
+            <button><span>bb5441</span></button>
+          </li>
+        </div>
+        <ul class="btm">
+          <li>
+            <h1>4</h1>
+            <img class="img1" src="./images/20.png" alt="" />
+            <h2>范晓凯</h2>
+            <h3>已经参加竞赛50次</h3>
+            <img class="img2" src="./images/23.png" alt="" />
+            <h4>TOP&nbsp;4</h4>
+          </li>
+          <li>
+            <h1>5</h1>
+            <img class="img1" src="./images/20.png" alt="" />
+            <h2>孟书宇</h2>
+            <h3>已经参加竞赛3次</h3>
+            <img class="img2" src="./images/22.png" alt="" />
+            <h4>TOP&nbsp;5</h4>
+          </li>
+          <li>
+            <h1>6</h1>
+            <img class="img1" src="./images/20.png" alt="" />
+            <h2>孟书帆</h2>
+            <h3>已经参加竞赛3次</h3>
+            <img class="img2" src="./images/21.png" alt="" />
+            <h4>TOP&nbsp;6</h4>
+          </li>
+          <li>
+            <h1>7</h1>
+            <img class="img1" src="./images/20.png" alt="" />
+            <h2>范晓凯</h2>
+            <h3>已经参加竞赛50次</h3>
+            <h4>TOP&nbsp;7</h4>
+          </li>
+          <li>
+            <h1>8</h1>
+            <img class="img1" src="./images/20.png" alt="" />
+            <h2>孟书宇</h2>
+            <h3>已经参加竞赛3次</h3>
+            <h4>TOP&nbsp;8</h4>
+          </li>
+          <li>
+            <h1>9</h1>
+            <img class="img1" src="./images/20.png" alt="" />
+            <h2>孟书帆</h2>
+            <h3>已经参加竞赛3次</h3>
+            <h4>TOP&nbsp;9</h4>
+          </li>
+          <span>显示更多</span>
+        </ul>
+      </div>
       <div class="game">
         <div class="top1">
           <h1>往届竞赛回顾</h1>
@@ -140,7 +242,7 @@
           </li>
           <li>
             <div class="left">
-              <h1>第 12 场竞赛</h1>
+              <h1>第 120 场竞赛</h1>
               <h2>2022-04-24，12:30</h2>
             </div>
             <img src="./images/12.png" alt="" />
@@ -209,6 +311,42 @@
             <img src="./images/19.png" alt="" />
             <h1 class="h1">1 小时 30 分</h1>
             <button><span>虚拟</span></button>
+          </li>
+          <li>
+            <div class="left">
+              <h1>第 350 场竞赛</h1>
+              <h2>2022-05-01，10:30</h2>
+            </div>
+            <img src="./images/10.png" alt="" />
+            <h1 class="h1">1 小时 30 分</h1>
+            <button><span>虚拟</span></button>
+          </li>
+          <li>
+            <div class="left">
+              <h1>第 153 场竞赛</h1>
+              <h2>2022-04-28，9:00</h2>
+            </div>
+            <img src="./images/11.png" alt="" />
+            <h1 class="h1">1 小时 00 分</h1>
+            <button class="btn"><span>虚拟</span></button>
+          </li>
+          <li>
+            <div class="left">
+              <h1>第 120 场竞赛</h1>
+              <h2>2022-04-24，12:30</h2>
+            </div>
+            <img src="./images/12.png" alt="" />
+            <h1 class="h1">2 小时 30 分</h1>
+            <button class="btn"><span>虚拟</span></button>
+          </li>
+          <li>
+            <div class="left">
+              <h1>第 247 场竞赛</h1>
+              <h2>2022-04-22，14:30</h2>
+            </div>
+            <img src="./images/13.png" alt="" />
+            <h1 class="h1">3 小时 00 分</h1>
+            <button class="btn"><span>虚拟</span></button>
           </li>
         </ul>
       </div>
@@ -334,7 +472,7 @@
           </div>
         </div>
         <div id="outer">
-          <van-swipe :autoplay="2000" indicator-color="black">
+          <van-swipe :autoplay="2000" indicator-color="white">
             <van-swipe-item
               ><img class="image" src="./images/banner.jpg" alt=""
             /></van-swipe-item>
@@ -550,31 +688,182 @@ export default {
     position: relative;
     top: -9em;
     height: 90em;
-    .el-carousel {
-      width: 57%;
+    .left {
+      width: 51em;
       float: left;
-      /deep/ .el-carousel__arrow i {
-        position: absolute;
-        margin: -0.5em;
+      .el-carousel {
+        width: 82%;
+        /deep/ .el-carousel__arrow i {
+          position: absolute;
+          margin: -0.5em;
+        }
+        /deep/ .el-carousel__indicators--outside {
+          position: absolute;
+          top: 0em;
+          display: none;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+        }
       }
-      /deep/ .el-carousel__indicators--outside {
-        position: absolute;
-        top: 0em;
-        display: none;
+      .bottom {
+        position: relative;
+        margin-top: 2em;
+        .icon {
+          float: left;
+        }
+        h1 {
+          position: absolute;
+          margin: -1.2em 2.2em;
+          font-size: 37px;
+          color: #dbdbdb;
+        }
+        .li_1 {
+          position: absolute;
+          margin: 2em 11.3em;
+          list-style: none;
+          img {
+            transform: scale(0.5);
+            border-radius: 50%;
+            border: 15px solid #dbb11c;
+          }
+          .icon1 {
+            position: absolute;
+            margin: 13.5em -9em;
+          }
+          button {
+            position: absolute;
+            margin: 13.5em -12.5em;
+            width: 6em;
+            height: 2.5em;
+            color: #dbb11c;
+            border: none;
+            border-radius: 5px;
+            span {
+              position: absolute;
+              font-size: 16px;
+              margin: -4.95em -1.6em;
+            }
+          }
+        }
+        .li_2 {
+          position: absolute;
+          margin: 12em 0;
+          list-style: none;
+          img {
+            transform: scale(0.5);
+            border-radius: 50%;
+            border: 15px solid rgb(184, 184, 184);
+          }
+          button {
+            position: absolute;
+            margin: 13.5em -12.5em;
+            width: 6em;
+            height: 2.5em;
+            color: #dbb11c;
+            border: none;
+            border-radius: 5px;
+            span {
+              position: absolute;
+              font-size: 16px;
+              margin: -4.95em -1.6em;
+            }
+          }
+        }
+        .li_3 {
+          position: absolute;
+          margin: 12em 23em;
+          list-style: none;
+          img {
+            transform: scale(0.5);
+            border-radius: 50%;
+            border: 15px solid rgb(219, 136, 82);
+          }
+          button {
+            position: absolute;
+            margin: 13.5em -12.5em;
+            width: 6em;
+            height: 2.5em;
+            color: #dbb11c;
+            border: none;
+            border-radius: 5px;
+            span {
+              position: absolute;
+              font-size: 16px;
+              margin: -4.95em -1.6em;
+            }
+          }
+        }
       }
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
+      .btm {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+        margin-top: 33em;
+        width: 40em;
+        height: 41em;
+        border-radius: 15px;
+        background-color: #36393f;
+        color: white;
+        padding: 1em;
+        li {
+          position: relative;
+          height: 6em;
+          border-bottom: 1px solid #bfbfbf;
+          h1 {
+            position: absolute;
+            margin: -2.4em 1em;
+            float: left;
+          }
+          .img1 {
+            position: absolute;
+            margin: 1.1em -15.5em;
+            float: left;
+            width: 3.5em;
+            height: 3.5em;
+            border-radius: 50%;
+          }
+          .img2 {
+            position: absolute;
+            margin: -2em -3em;
+            float: left;
+            transform: scale(0.4);
+            border-radius: 50%;
+          }
+          h2 {
+            position: absolute;
+            margin: -3.9em 8em;
+            font-size: 14px;
+            color: #dbb11c;
+          }
+          h3 {
+            position: absolute;
+            color: #bfbfbf;
+            margin: -2.3em 8em;
+          }
+          h4 {
+            position: absolute;
+            margin: -2.2em 19.5em;
+            font-size: 20px;
+          }
+        }
+        span {
+          position: absolute;
+          margin-top: -3em;
+          margin-left: -2em;
+          color: #2c92f8;
+          font-size: 16px;
+        }
       }
     }
+
     .game {
-      float: right;
-      width: 37em;
-      height: 80em;
+      margin-left: 47em;
+      width: 45.5em;
+      height: 109.5em;
       background-color: #36393f;
       border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
       color: white;
       .top1 {
         height: 10.2em;
@@ -591,21 +880,21 @@ export default {
         }
         .icon {
           position: absolute;
-          margin: 3em 8.5em;
+          margin: 3em 9em;
         }
         h3 {
           width: 10em;
           position: absolute;
           color: #007bff;
           font-size: 15px;
-          margin: -1.8em 21em;
+          margin: -1.8em 27em;
         }
       }
       .random {
         width: 3.5em;
         height: 3.5em;
         position: absolute;
-        margin: -3.7em 31em;
+        margin: -3.7em 37.5em;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
         border-radius: 50%;
         .icon {
@@ -619,11 +908,11 @@ export default {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
         h2 {
           float: left;
-          margin: -3.7em 8em 0 2em;
+          margin: -3.7em 13em 0 -1em;
         }
         i {
           position: absolute;
-          margin: 0.5em -11em;
+          margin: 0.5em -16em;
           float: left;
           font-size: 20px;
         }
@@ -632,18 +921,19 @@ export default {
         position: relative;
         top: -9.5em;
         li {
-          height: 10.5em;
+          height: 10.7em;
           margin-bottom: -9.5em;
           border-bottom: 1px solid #bfbfbf;
           .left {
             position: absolute;
+            left: -19em;
             float: left;
             h1 {
               font-size: 16px;
             }
             h2 {
               margin-top: -10.5em;
-              margin-left: 1em;
+              margin-left: 0.5em;
               font-size: 13px;
               color: #bfbfbf;
             }
@@ -651,7 +941,7 @@ export default {
           img {
             position: absolute;
             margin-top: 4.5em;
-            left: 11em;
+            left: 12.5em;
             float: left;
             width: 10em;
             height: 6em;
@@ -659,7 +949,7 @@ export default {
           .h1 {
             position: relative;
             top: 0.4em;
-            left: 3em;
+            left: 5em;
             width: 12em;
             margin: 4em 10em;
             font-size: 16px;
@@ -668,7 +958,7 @@ export default {
           button {
             position: relative;
             top: -18.5em;
-            left: 14.5em;
+            left: 15em;
             display: inline-block;
             width: 3.5em;
             height: 2em;
@@ -682,19 +972,21 @@ export default {
               left: 0.8em;
             }
           }
+          .btn {
+            margin-left: 4.2em;
+          }
         }
       }
     }
   }
   .top {
-    margin-top: -15em;
+    margin-top: 16em;
     width: 96%;
     height: 44em;
     border-radius: 15px;
     padding: 2em;
     background-color: #36393f;
     .nav-wrapper {
-      margin-top: -1em;
       height: 86px;
       border-bottom: 1px solid rgb(190, 190, 190);
       .navbar {
@@ -705,14 +997,14 @@ export default {
           top: 13px;
           img {
             margin-left: -13em;
-            margin-top: -13.5em;
-            transform: scale(0.3);
+            margin-top: -15.5em;
+            transform: scale(0.4);
           }
         }
         .text {
           font-size: 16px;
           position: absolute;
-          left: 155px;
+          left: 165px;
           font-size: 18px;
           .yangshi {
             color: #2158e6;
