@@ -80,11 +80,7 @@
                   >
                   </el-option>
                 </el-select>
-                <el-input
-                  placeholder="请输入内容"
-                  prefix-icon="el-icon-search"
-                  v-model="input2"
-                >
+                <el-input placeholder="请输入内容" prefix-icon="el-icon-search">
                 </el-input>
                 <i class="el-icon-setting"></i>
                 <svg
@@ -530,8 +526,61 @@
           </div>
           <i class="el-icon-arrow-right"></i>
         </div>
+        <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+          <van-swipe-item><img src="./images/10.jpg" alt="" /></van-swipe-item>
+          <van-swipe-item><img src="./images/9.jpg" alt="" /></van-swipe-item>
+          <van-swipe-item><img src="./images/8.jpg" alt="" /></van-swipe-item>
+          <van-swipe-item><img src="./images/7.jpg" alt="" /></van-swipe-item>
+          <van-swipe-item><img src="./images/11.jpg" alt="" /></van-swipe-item>
+        </van-swipe>
         <img class="img1" src="./images/6.jpg" alt="" />
         <div class="right_3">
+          <svg
+            t="1650678353368"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="16093"
+            width="45"
+            height="45"
+          >
+            <path
+              d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z"
+              fill="#04B8DD"
+              p-id="16094"
+            ></path>
+            <path
+              d="M730.666667 712.533333a15.189333 15.189333 0 1 1 0 30.464H335.189333a15.189333 15.189333 0 0 1 0-30.421333h395.477334z m-99.114667-394.368l52.437333 52.437334a42.666667 42.666667 0 0 1 0 60.330666l-244.992 244.949334a21.333333 21.333333 0 0 1-15.061333 6.272H327.594667a7.594667 7.594667 0 0 1-7.594667-7.594667v-96.341333a21.333333 21.333333 0 0 1 6.229333-15.104l244.992-244.906667a42.666667 42.666667 0 0 1 60.330667 0z m-75.818667 58.453334l-199.082666 199.125333a21.333333 21.333333 0 0 0-6.229334 15.061333v39.594667a21.333333 21.333333 0 0 0 21.333334 21.333333h33.194666l-39.338666-39.338666a15.189333 15.189333 0 0 1 21.546666-21.504l46.890667 46.933333 191.445333-191.445333-69.76-69.76z m22.186667-20.906667l68.48 68.565333a42.666667 42.666667 0 0 0-5.418667-53.674666l-9.429333-9.386667a42.666667 42.666667 0 0 0-53.632-5.504z"
+              fill="#FFFFFF"
+              p-id="16095"
+            ></path>
+          </svg>
+          <h1 class="s1">发起讨论</h1>
+          <svg
+            t="1650678446147"
+            class="icon1"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="26000"
+            width="45"
+            height="45"
+          >
+            <path
+              d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z"
+              fill="#A08CF6"
+              p-id="26001"
+            ></path>
+            <path
+              d="M698.88 427.52h40.96v69.12l104.96-122.88-104.96-117.76v79.36h-40.96c-117.76 0-194.56 89.6-253.44 168.96-53.76 71.68-99.84 138.24-171.52 138.24H204.8v92.16h66.56c117.76 0 184.32-97.28 243.2-176.64 53.76-69.12 110.08-130.56 184.32-130.56z m-322.56 53.76l15.36-20.48c12.8-17.92 25.6-35.84 40.96-53.76-43.52-40.96-94.72-71.68-161.28-71.68H204.8v92.16h66.56c46.08 2.56 74.24 20.48 104.96 53.76z m363.52 166.4h-40.96c-46.08 0-89.6-25.6-122.88-61.44-2.56 5.12-7.68 7.68-10.24 12.8-15.36 17.92-28.16 40.96-46.08 58.88 43.52 43.52 107.52 79.36 179.2 79.36h40.96V819.2l104.96-122.88-104.96-117.76v69.12z"
+              fill="#FFFFFF"
+              p-id="26002"
+            ></path>
+          </svg>
+          <h1 class="s2">随即面试</h1>
+        </div>
+        <div class="right_4">
           <h1>精选题单</h1>
           <ul>
             <li>
@@ -1871,30 +1920,6 @@ export default {
           tough: "简单",
           frequency: "76%",
         },
-        {
-          src: "false",
-          title: "4.新摩尔定律的含义",
-          key: "150",
-          rate: "53.2%",
-          tough: "中等",
-          frequency: "54%",
-        },
-        {
-          src: "true",
-          title: "5.云计算技术体系结构",
-          key: "14",
-          rate: "74.5%",
-          tough: "简单",
-          frequency: "76%",
-        },
-        {
-          src: "true",
-          title: "6.简述Hadoop1.0与Hadoop2.0的优缺点",
-          key: "14",
-          rate: "74.5%",
-          tough: "困难",
-          frequency: "76%",
-        },
       ],
       pageSize: 12,
       currPage: 1,
@@ -1924,12 +1949,13 @@ export default {
 
 <style lang="less" scoped>
 .text-container {
+  position: relative;
   width: 80%;
   height: 100%;
   margin: 2em auto;
   z-index: 0;
   .center {
-    height: 125em;
+    height: 126em;
     background-color: #36393f;
     border-radius: 15px;
     ul {
@@ -2096,7 +2122,7 @@ export default {
         }
         .el-pagination {
           position: absolute;
-          top: 82.5em;
+          top: 84em;
           left: 17em;
           /deep/ .el-pagination__jump {
             color: white;
@@ -2167,6 +2193,22 @@ export default {
       margin: -1em 0.7em;
     }
   }
+  .my-swipe {
+    margin-top: 1.5em;
+    border-radius: 15px;
+    height: 14em;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .van-swipe-item {
+      color: #fff;
+      font-size: 20px;
+      line-height: 150px;
+      text-align: center;
+      background-color: #39a9ed;
+    }
+  }
   .img1 {
     margin-top: 1.5em;
     width: 100%;
@@ -2180,6 +2222,40 @@ export default {
   .right_3 {
     position: relative;
     top: -4.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #36393f;
+    border-radius: 15px;
+    height: 6em;
+    color: white;
+    h1 {
+      font-size: 16px;
+    }
+    .s1 {
+      position: absolute;
+      top: -2.6em;
+      left: 5.5em;
+      color: rgb(4, 184, 221);
+    }
+    .s2 {
+      position: absolute;
+      top: -2.6em;
+      left: 16em;
+      color: rgb(160, 140, 246);
+    }
+    .icon {
+      position: absolute;
+      top: 1.2em;
+      left: 2em;
+    }
+    .icon1 {
+      position: absolute;
+      top: 1.2em;
+      left: 16em;
+    }
+  }
+  .right_4 {
+    position: relative;
+    top: -2.5em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: #36393f;
     border-radius: 15px;

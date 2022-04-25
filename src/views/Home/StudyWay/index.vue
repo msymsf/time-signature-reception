@@ -3840,9 +3840,9 @@ export default {
         width: 109%;
         li {
           float: left;
-          width: 19.8em;
+          width: 18.2em;
           height: 15.5em;
-          margin: 0 2.5em 2em 0;
+          margin: 0 5em 2em 0;
           background-color: #36393f;
           border-radius: 15px;
           &:hover {
@@ -3851,7 +3851,7 @@ export default {
           }
           .image1 {
             position: absolute;
-            margin: 1.5em -8.5em;
+            margin: 1.5em -7.5em;
             width: 50px;
             height: 50px;
           }
@@ -3861,7 +3861,7 @@ export default {
           }
           span {
             position: absolute;
-            margin: 2.7em -8.3em;
+            margin: 2.8em -7.3em;
           }
           h2 {
             position: absolute;
@@ -3870,14 +3870,14 @@ export default {
           }
           .icon1 {
             position: absolute;
-            margin: 7em 1em;
+            margin: 7.1em 1em;
           }
           button {
-            width: 16.5em;
+            width: 15.5em;
             height: 3em;
             line-height: 3em;
             position: absolute;
-            margin: 11em -8.5em;
+            margin: 11em -7.8em;
             border: none;
             border-radius: 10px;
             background-image: -moz-linear-gradient(
@@ -3905,7 +3905,7 @@ export default {
             }
             h3 {
               float: left;
-              margin: 0 0 0 1.2em;
+              margin: 0 0 0 1em;
               font-size: 10px;
               color: #256efb;
             }

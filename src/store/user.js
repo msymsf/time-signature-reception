@@ -35,7 +35,7 @@ const actions = {
   },
   //登录业务
   async userLogin({ commit }, params) {
-    let result = await reqUserLogin(params);
+    let result = await login(params);
     if (result.code == 20000) {
       commit("USERLOGIN", result.data.token);
       setToken(result.data.token);

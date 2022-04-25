@@ -10,7 +10,12 @@ import VeeValidate from "vee-validate";
 import echarts from "echarts";
 import { Badge } from "vant";
 import { Calendar } from "vant";
+import { Swipe, SwipeItem } from "vant";
+import { CountDown } from "vant";
 
+Vue.use(CountDown);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
 Vue.use(Calendar);
 Vue.use(Badge);
 

@@ -5,7 +5,7 @@
         <li><img src="./images/2.png" alt="" /></li>
         <li @click="learn">学习</li>
         <li @click="question">题库</li>
-        <li>竞赛</li>
+        <li @click="match">竞赛</li>
       </ul>
       <div class="svgs" v-if="userName">
         <van-badge :content="5">
@@ -1167,6 +1167,7 @@
       <StudyWay v-show="scene == 0" />
       <Question v-show="scene == 1" />
       <Personal v-show="scene == 2" />
+      <Match v-show="scene == 3" />
     </el-main>
   </el-container>
 </template>
@@ -1176,12 +1177,14 @@ import { login } from "@/api";
 import StudyWay from "./StudyWay/index";
 import Question from "./Question/index.vue";
 import Personal from "./Personal/index.vue";
+import Match from "./Match/index.vue";
 
 export default {
   components: {
     StudyWay,
     Question,
     Personal,
+    Match,
   },
   data() {
     return {
@@ -1206,7 +1209,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
-      scene: 1,
+      scene: 3,
     };
   },
   computed: {
@@ -1225,14 +1228,17 @@ export default {
     };
   },
   methods: {
-    personal() {
-      this.scene = 2;
-    },
     learn() {
       this.scene = 0;
     },
     question() {
       this.scene = 1;
+    },
+    personal() {
+      this.scene = 2;
+    },
+    match() {
+      this.scene = 3;
     },
     showClick() {
       this.zhanshi = true;
