@@ -6,6 +6,7 @@
         <li @click="learn">学习</li>
         <li @click="question">题库</li>
         <li @click="match">竞赛</li>
+        <li @click="discuss">讨论</li>
       </ul>
       <div class="svgs" v-if="userName">
         <van-badge :content="5">
@@ -1168,6 +1169,7 @@
       <Question v-show="scene == 1" />
       <Personal v-show="scene == 2" />
       <Match v-show="scene == 3" />
+      <Discuss v-show="scene == 4" @change="change" />
     </el-main>
   </el-container>
 </template>
@@ -1178,6 +1180,7 @@ import StudyWay from "./StudyWay/index";
 import Question from "./Question/index.vue";
 import Personal from "./Personal/index.vue";
 import Match from "./Match/index.vue";
+import Discuss from "./Discuss/index.vue";
 
 export default {
   components: {
@@ -1185,6 +1188,7 @@ export default {
     Question,
     Personal,
     Match,
+    Discuss,
   },
   data() {
     return {
@@ -1209,7 +1213,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
-      scene: 0,
+      scene: 4,
     };
   },
   computed: {
@@ -1239,6 +1243,13 @@ export default {
     },
     match() {
       this.scene = 3;
+    },
+    discuss() {
+      this.scene = 4;
+    },
+    change({ show,show1 }) {
+      this.show = show;
+      this.show1 = show1;
     },
     showClick() {
       this.zhanshi = true;
@@ -1364,9 +1375,9 @@ export default {
         float: left;
         font-size: 15px;
         color: #e6e2dd;
-        margin: 1em 4.5em;
+        margin: 1em 2em;
         img {
-          margin: -1em 0;
+          margin: -0.6em 0 0 3em;
           width: 100px;
           height: 40px;
         }
@@ -1375,7 +1386,7 @@ export default {
     .svgs {
       position: relative;
       left: 88em;
-      top: -3.2em;
+      top: -4.5em;
       width: 40px;
       &::after {
         display: none;
@@ -1397,7 +1408,7 @@ export default {
         z-index: 9999;
         overflow: hidden;
         transition: height 0.3s;
-        margin: 1.11em -10.5em;
+        margin: 1em -11.3em;
         width: 384px;
         height: 0;
         background-color: #36393f;
@@ -1689,6 +1700,7 @@ export default {
             margin-right: 4.5em;
           }
           ul {
+            padding: 0 3em;
             margin: 1.5em 0;
             .icon5 {
               margin: 0.2em -1em;
@@ -1701,7 +1713,7 @@ export default {
             .el-switch {
               position: relative;
               top: -1em;
-              margin: 0 10em;
+              margin: 0 11em;
             }
           }
         }

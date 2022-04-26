@@ -7,19 +7,20 @@ import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import { Overlay } from "vant";
 import VeeValidate from "vee-validate";
-import echarts from "echarts";
 import { Badge } from "vant";
 import { Calendar } from "vant";
 import { Swipe, SwipeItem } from "vant";
 import { CountDown } from "vant";
+import { Tab, Tabs } from "vant";
 
+Vue.use(Tab);
+Vue.use(Tabs);
 Vue.use(CountDown);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Calendar);
 Vue.use(Badge);
 
-Vue.prototype.$echarts = echarts;
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
 Vue.use(Overlay);
