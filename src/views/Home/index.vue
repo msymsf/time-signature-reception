@@ -1213,7 +1213,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
-      scene: 4,
+      scene: 0,
     };
   },
   computed: {
@@ -1247,7 +1247,7 @@ export default {
     discuss() {
       this.scene = 4;
     },
-    change({ show,show1 }) {
+    change({ show, show1 }) {
       this.show = show;
       this.show1 = show1;
     },
