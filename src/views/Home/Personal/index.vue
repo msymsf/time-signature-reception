@@ -615,6 +615,7 @@
           </svg>
           <h1>讨论发布</h1>
         </div>
+        <el-empty description="暂无内容"></el-empty>
       </div>
     </div>
   </div>
@@ -1167,6 +1168,15 @@ export default {
       left: 18em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       color: white;
+      .el-empty {
+        position: absolute;
+        top: 10em;
+        left: 30em;
+        /deep/ p {
+          color: white;
+          margin-top: -3em;
+        }
+      }
       .btm {
         position: relative;
         width: 10em;
