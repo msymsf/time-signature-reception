@@ -3614,63 +3614,65 @@
           ></el-progress>
           <div class="charts" ref="charts"></div>
         </div>
-        <div class="course">
-          <h1>我的课程</h1>
-          <div class="courses">
-            <div class="c">
-              <div class="image">
-                <img src="../images/9.png" alt="" />
+        <van-sticky :offset-top="1">
+          <div class="course">
+            <h1>我的课程</h1>
+            <div class="courses">
+              <div class="c">
+                <div class="image">
+                  <img src="../images/9.png" alt="" />
+                </div>
+                <h2 class="h1">JavaSE(50%)</h2>
+                <el-progress
+                  :text-inside="true"
+                  :stroke-width="15"
+                  :percentage="50"
+                  style="width: 150px"
+                  class="p1"
+                ></el-progress>
               </div>
-              <h2 class="h1">JavaSE(50%)</h2>
-              <el-progress
-                :text-inside="true"
-                :stroke-width="15"
-                :percentage="50"
-                style="width: 150px"
-                class="p1"
-              ></el-progress>
-            </div>
-            <div class="c">
-              <div class="image">
-                <img src="../images/10.png" alt="" />
+              <div class="c">
+                <div class="image">
+                  <img src="../images/10.png" alt="" />
+                </div>
+                <h2 class="h2">MySQL(80%)</h2>
+                <el-progress
+                  :text-inside="true"
+                  :stroke-width="15"
+                  :percentage="80"
+                  style="width: 150px"
+                  class="p2"
+                ></el-progress>
               </div>
-              <h2 class="h2">MySQL(80%)</h2>
-              <el-progress
-                :text-inside="true"
-                :stroke-width="15"
-                :percentage="80"
-                style="width: 150px"
-                class="p2"
-              ></el-progress>
-            </div>
-            <div class="c">
-              <div class="image">
-                <img src="../images/25.png" alt="" />
+              <div class="c">
+                <div class="image">
+                  <img src="../images/25.png" alt="" />
+                </div>
+                <h2 class="h1">JavaScript(30%)</h2>
+                <el-progress
+                  :text-inside="true"
+                  :stroke-width="15"
+                  :percentage="30"
+                  style="width: 150px"
+                  class="p1"
+                ></el-progress>
               </div>
-              <h2 class="h1">JavaScript(30%)</h2>
-              <el-progress
-                :text-inside="true"
-                :stroke-width="15"
-                :percentage="30"
-                style="width: 150px"
-                class="p1"
-              ></el-progress>
-            </div>
-            <div class="c">
-              <div class="image">
-                <img src="../images/26.png" alt="" />
+              <div class="c">
+                <div class="image">
+                  <img src="../images/26.png" alt="" />
+                </div>
+                <h2 class="h2">Linux(60%)</h2>
+                <el-progress
+                  :text-inside="true"
+                  :stroke-width="15"
+                  :percentage="60"
+                  style="width: 150px"
+                  class="p2"
+                ></el-progress>
               </div>
-              <h2 class="h2">Linux(60%)</h2>
-              <el-progress
-                :text-inside="true"
-                :stroke-width="15"
-                :percentage="60"
-                style="width: 150px"
-                class="p2"
-              ></el-progress>
             </div>
           </div>
-        </div>
+        </van-sticky>
       </el-col>
     </el-row>
   </div>
@@ -3935,6 +3937,9 @@ export default {
         height: 260px;
         margin: 7em 1.5em;
       }
+    }
+    /deep/ .van-sticky--fixed {
+      left: 80em;
     }
     .course {
       margin: 1.5em 0;

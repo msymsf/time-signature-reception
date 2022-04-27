@@ -12,7 +12,9 @@ import { Calendar } from "vant";
 import { Swipe, SwipeItem } from "vant";
 import { CountDown } from "vant";
 import { Tab, Tabs } from "vant";
+import { Sticky } from "vant";
 
+Vue.use(Sticky);
 Vue.use(Tab);
 Vue.use(Tabs);
 Vue.use(CountDown);
