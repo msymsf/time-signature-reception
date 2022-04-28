@@ -1487,12 +1487,12 @@ export default {
           .login-container {
             img {
               width: 58em;
-              height: 27em;
+              height: 24em;
             }
             .login {
               position: relative;
               height: 200px;
-              margin: -8em auto;
+              margin: -7em auto;
               .form {
                 margin-left: 23em;
                 h2 {
@@ -1500,13 +1500,13 @@ export default {
                   font-family: "楷体", serif;
                   font-size: 20px;
                   color: black;
-                  margin: -10em 8em;
+                  margin: -8.5em 8em;
                 }
                 .icons2 {
                   position: absolute;
                   width: 25px;
                   height: 25px;
-                  margin: -19em -2em;
+                  margin: -17em -2em;
                 }
                 span {
                   color: black;
@@ -1515,10 +1515,10 @@ export default {
                   position: absolute;
                   width: 20em;
                   height: 30em;
-                  margin: -14em 5em;
+                  margin: -12em 5em;
                   .input-text {
                     width: 21em;
-                    margin: 2em 1.5em;
+                    margin: 1.5em 1.5em;
                     color: black;
                     border-bottom: 1px solid #cdcdcd;
                     .icon {

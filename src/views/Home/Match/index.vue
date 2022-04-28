@@ -1,6 +1,35 @@
 <template>
   <div class="match">
-    <img class="imagess" src="./images/1.png" alt="" />
+    <img class="imagess" src="./images/2.png" alt="" />
+    <div class="insert">
+      <h1>往期比赛</h1>
+      <h2>更多</h2>
+      <li>
+        <img src="./images/1.png" alt="" />
+        <h3>蓝桥杯大赛</h3>
+        <h4>10135人参赛</h4>
+      </li>
+      <li>
+        <img class="img_2" src="./images/25.png" alt="" />
+        <h3>计算机设计大赛</h3>
+        <h4>6542人参赛</h4>
+      </li>
+      <li>
+        <img class="img_2" src="./images/26.png" alt="" />
+        <h3>微信小程序大赛</h3>
+        <h4>688人参赛</h4>
+      </li>
+      <li>
+        <img class="img_1" src="./images/24.png" alt="" />
+        <h3>计算机职业资格</h3>
+        <h4>455人参赛</h4>
+      </li>
+      <li>
+        <img class="img_1" src="./images/27.png" alt="" />
+        <h3>Alexa Prize</h3>
+        <h4>320人参赛</h4>
+      </li>
+    </div>
     <div class="content">
       <div class="con">
         <img class="image1" src="./images/3.jpg" alt="" />
@@ -614,6 +643,65 @@
         </div>
       </div>
     </div>
+    <div class="tool-wrapper">
+      <ul class="tool">
+        <li>
+          <a href="javascript:;">竞赛秒杀</a>
+        </li>
+        <li>
+          <a href="javascript:;">特色优选</a>
+        </li>
+        <li>
+          <a href="javascript:;">讨论广场</a>
+        </li>
+        <li>
+          <a href="javascript:;">为你推荐</a>
+        </li>
+        <li>
+          <svg
+            t="1651132175167"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="3775"
+            width="25"
+            height="25"
+          >
+            <path
+              d="M515.6 770.2c48.4 0 91.3-31.3 106.2-77.4 1-3.1-0.4-6.4-3.4-7.8-3-1.3-6.5-0.2-8.1 2.6-0.2 0.3-17.2 27.8-83.7 36.8-9.5 1.3-19.2 2-28.8 2-46.5 0-67.3-17.6-67.5-17.7-2.4-2.1-5.9-2.1-8.4-0.1-2.4 2-3 5.6-1.3 8.3 20.4 32.8 56.7 53.2 95 53.3z"
+              p-id="3776"
+              fill="#515151"
+            ></path>
+            <path
+              d="M808.3 398.9c-45.7-123.7-164-212.1-303.2-212.1-138.6 0-256.6 87.6-302.6 210.5-2.4-2.7-4.9-5.3-7.6-7.6C221 239.9 349.9 126 505.3 126c154.7 0 283.2 112.8 310.2 261.5-2.8 3.6-5.2 7.4-7.2 11.4z m64.6-40.5c-0.6 0-1.1 0.1-1.7 0.1C832.3 190 683.5 64.3 505.2 64.3 322 64.3 169.8 197 136.1 372.5c-33.5 6.2-57.9 35.5-57.7 69.6v139.5c0 39.1 31.4 70.8 70.1 70.8 21.8 0 41.1-10.3 53.9-26.1C233.4 708 296 774 376.2 809c1-2 2.2-3.9 3.5-5.7 1.3-1.6 2.7-3 3.9-3 1.2 0 2.4 0.4 3.4 1.1-18.5-13.8-85.2-84.4-99.7-183.1-6.3-43.4 26.2-86.1 64.1-93.1 60.8-11.3 121.3-24.2 182.1-35.3 38.7-7 65.1-28.3 81.2-63.6 3.8-8.3 9.3-25 11.8-49 0.6-3.6 3.7-6.3 7.4-6.3 2.4 0 4.6 1.2 6 3.1l1.7-1c24 34.8 71.5 111.9 78.3 193.1 7.8 92.9 3.5 156.5-67.6 221.6l-0.3 0.3c-1 1.1-1.6 2.5-1.6 4 0 1.9 1 3.7 2.6 4.7 0.6 0.2 1.2 0.6 1.8 0.8 0.5 0.1 0.9 0.2 1.4 0.3 0.5 0 0.9-0.1 1.3-0.3 1-0.5 2-1.1 3-1.7 72.6-40.1 127.2-106.4 152.5-185.4a72.29 72.29 0 0 0 45.2 30.2c-30 136.9-152.2 222.7-303.5 235.6-9.6-23.4-32.4-38.6-57.6-38.5-34.2 0-62 27.1-62 60.5s27.8 60.5 62 60.5c26.6 0.1 50.3-16.9 58.7-42.1 175.1-14.2 315.5-118.3 344.8-280 26.7-11 44.1-37 44.1-65.9V429.9c0.2-39.5-32-71.5-71.8-71.5z"
+              p-id="3777"
+              fill="#515151"
+            ></path>
+          </svg>
+          <a href="javascript:;">客服</a>
+        </li>
+        <li>
+          <svg
+            t="1651132321985"
+            class="icon"
+            viewBox="0 0 1068 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="5788"
+            width="22"
+            height="22"
+          >
+            <path
+              d="M713.728 0l125.929739 125.929739v62.953739l-125.929739 125.929739-204.621913-173.145043L650.774261 0h62.953739z m-267.575652 204.621913l204.621913 173.167304-346.290087 368.550957h-31.499131l-157.384347-125.929739v-62.953739l330.551652-352.834783zM84.101565 683.364174l141.668174 110.191304L21.147826 850.009043l62.953739-166.644869zM422.956522 747.653565c0-24.598261 20.034783-44.521739 44.365913-44.521739h556.833391c24.486957 0 44.365913 19.767652 44.365913 44.521739 0 24.576-20.034783 44.521739-44.365913 44.521739H467.322435c-24.486957 0-44.365913-19.767652-44.365913-44.521739z m-422.956522 222.608696a44.521739 44.521739 0 0 1 44.544-44.521739H1024a44.521739 44.521739 0 1 1 0 89.043478H44.521739a44.432696 44.432696 0 0 1-44.544-44.521739z"
+              p-id="5789"
+              fill="#515151"
+            ></path>
+          </svg>
+          <a href="javascript:;">反馈</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -642,12 +730,72 @@ export default {
   margin: 0 auto;
   z-index: 0;
   .imagess {
-    width: 100%;
+    position: relative;
+    top: -1.6em;
+    left: -13em;
+    width: 129%;
     height: 100%;
+  }
+  .insert {
+    width: 20em;
+    height: 25em;
+    border-radius: 10px;
+    position: absolute;
+    top: 0em;
+    left: 70em;
+    background-color: white;
+    text-align: left;
+    list-style: none;
+    padding: 0 1em;
+    h1 {
+      margin: -3em 0;
+    }
+    h2 {
+      float: right;
+      margin-top: -6.6em;
+      margin-right: 0;
+    }
+    li {
+      top: -0.6em;
+      position: relative;
+      height: 4em;
+      border-bottom: 1px solid #bfbfbf;
+      padding: 0 0.5em;
+      img {
+        position: absolute;
+        top: 1em;
+        width: 3em;
+        height: 2em;
+        float: left;
+      }
+      .img_1 {
+        top: 0.6em;
+        width: 3em;
+        height: 3em;
+      }
+      .img_2 {
+        left: 0.7em;
+        top: 0.8em;
+        width: 2.5em;
+        height: 2.5em;
+      }
+      h3 {
+        position: absolute;
+        font-size: 15px;
+        top: -3.6em;
+        left: 3.3em;
+      }
+      h4 {
+        float: right;
+        position: absolute;
+        top: -4.5em;
+        right: 0.5em;
+      }
+    }
   }
   .content {
     position: relative;
-    top: -6em;
+    top: -8em;
     left: -5em;
     width: 101.5em;
     .con {
@@ -776,7 +924,7 @@ export default {
   }
   .cont {
     position: relative;
-    top: -9em;
+    top: -11em;
     height: 90em;
     .left {
       width: 51em;
@@ -1069,7 +1217,7 @@ export default {
     }
   }
   .top {
-    margin-top: 16em;
+    margin-top: 14em;
     width: 96%;
     height: 44em;
     border-radius: 15px;
@@ -1402,6 +1550,23 @@ export default {
     }
     /deep/ .el-container .el-main[data-v-1d9b105c] {
       line-height: initial;
+    }
+  }
+  .tool-wrapper {
+    position: fixed;
+    top: 32.7em;
+    right: 3.5em;
+    .tool {
+      width: 58px;
+      height: 360px;
+      background-color: white;
+      li {
+        width: 32px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 10px 14px;
+      }
     }
   }
 }
