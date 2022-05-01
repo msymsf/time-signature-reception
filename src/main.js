@@ -13,7 +13,9 @@ import { Swipe, SwipeItem } from "vant";
 import { CountDown } from "vant";
 import { Tab, Tabs } from "vant";
 import { Sticky } from "vant";
+import lottie from "vue-lottie";
 
+Vue.component("lottie", lottie);
 Vue.use(Sticky);
 Vue.use(Tab);
 Vue.use(Tabs);

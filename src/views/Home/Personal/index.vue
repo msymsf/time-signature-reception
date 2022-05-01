@@ -632,7 +632,7 @@ export default {
       var end = +echarts.number.parseDate(year + "-12-31");
       var dayTime = 3600 * 24 * 1000;
       var data = [];
-      for (var time = date; time <= end; time += dayTime) {
+      for (var time = date; time < end; time += dayTime) {
         data.push([
           echarts.format.formatTime("yyyy-MM-dd", time),
           Math.floor(Math.random() * 10000),
@@ -640,19 +640,57 @@ export default {
       }
       return data;
     }
+    const data = getVirtulData("2022");
     var option = {
       visualMap: {
         show: false,
         min: 0,
         max: 10000,
       },
+      axisLabel: {
+        formatter: function (value) {
+          return value.split("").join("\n");
+        },
+      },
       calendar: {
         range: "2022",
+        cellSize: [15.5, 15.5],
+        splitLine: {
+          show: true,
+          lineStyle: {
+            //那个图上现在的黑线颜色
+            color: "#36393f",
+            width: 4,
+            dashOffset: 20,
+            type: "solid",
+          },
+        },
+        //每个方kuai之间的间隙的css
+        itemStyle: {
+          color: "#fff",
+          borderWidth: 2,
+          borderColor: "#fff",
+        },
+        dayLabel: {
+          color: "white",
+        },
+        monthLabel: {
+          color: "white",
+          margin: 10,
+        },
       },
+      gradientColor: [
+        "rgba(0, 0, 0, 0.85)",
+        "#4CC575",
+        "#159D51",
+        "#00772F",
+        "#00530D",
+        "#003100",
+      ],
       series: {
         type: "heatmap",
         coordinateSystem: "calendar",
-        data: getVirtulData(2022),
+        data: getVirtulData("2022"),
       },
     };
     myChart.setOption(option);
@@ -730,7 +768,7 @@ export default {
   }
   .my {
     display: flex;
-    margin-top: -3em;
+    margin-top: -3.5em;
     width: 200px;
     height: 81em;
     background-color: #36393f;
@@ -997,7 +1035,7 @@ export default {
   .center {
     ul {
       position: relative;
-      top: -8em;
+      top: -8.5em;
       left: 1.5em;
       li {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -1115,10 +1153,10 @@ export default {
     .learn {
       position: relative;
       width: 74em;
-      height: 21em;
+      height: 19em;
       border-radius: 10px;
       background-color: #36393f;
-      top: 14em;
+      top: 13em;
       left: 18em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       .top {
@@ -1153,18 +1191,18 @@ export default {
       }
       .charts {
         position: absolute;
-        margin: 2em 3.5em;
+        margin: 2.7em -2em;
+        width: 100em;
         height: 20em;
-        width: 65em;
       }
     }
     .bottom {
       position: relative;
       width: 74em;
-      height: 41em;
+      height: 44em;
       border-radius: 10px;
       background-color: #36393f;
-      top: 16em;
+      top: 14.5em;
       left: 18em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       color: white;

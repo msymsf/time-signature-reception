@@ -2,7 +2,7 @@
   <el-container style="background-color: #36393f">
     <el-header style="text-align: right; font-size: 12px; height: 50px">
       <ul>
-        <li><img src="./images/2.png" alt="" /></li>
+        <li @click="homes"><img src="./images/2.png" alt="" /></li>
         <li @click="learn">学习</li>
         <li @click="question">题库</li>
         <li @click="match">竞赛</li>
@@ -1170,6 +1170,7 @@
       <Personal v-show="scene == 2" />
       <Match v-show="scene == 3" />
       <Discuss v-show="scene == 4" @change="change" />
+      <Homes v-show="scene == 5" @change1="change1" />
     </el-main>
   </el-container>
 </template>
@@ -1181,6 +1182,7 @@ import Question from "./Question/index.vue";
 import Personal from "./Personal/index.vue";
 import Match from "./Match/index.vue";
 import Discuss from "./Discuss/index.vue";
+import Homes from "./Homes/index.vue";
 
 export default {
   components: {
@@ -1189,6 +1191,7 @@ export default {
     Personal,
     Match,
     Discuss,
+    Homes,
   },
   data() {
     return {
@@ -1213,7 +1216,7 @@ export default {
       showbtn: true,
       code_ts: "获取验证码",
       sec: 60,
-      scene: 0,
+      scene: 5,
     };
   },
   computed: {
@@ -1247,8 +1250,15 @@ export default {
     discuss() {
       this.scene = 4;
     },
+    homes() {
+      this.scene = 5;
+    },
     change({ show, show1 }) {
       this.show = show;
+      this.show1 = show1;
+    },
+    change1({ show1, scene }) {
+      this.scene = scene;
       this.show1 = show1;
     },
     showClick() {

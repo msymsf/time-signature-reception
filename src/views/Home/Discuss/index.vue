@@ -186,7 +186,7 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <button class="btm btm1">推荐</button>
+              <button class="btm">推荐</button>
               <h2>历年来蓝桥杯真题知识点以及题型的总结 , 由此进入...</h2>
               <div class="bottom">
                 <svg
@@ -274,7 +274,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>15.4k</h4>
+                <h4>154</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -321,7 +321,7 @@
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
               <button class="btm">2022时签系统</button>
-              <h2 class="h2">
+              <h2>
                 计算机设计大赛竞赛经验以及计赛历年的注意事项等等内容 ,
                 由此进入...
               </h2>
@@ -411,7 +411,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>20.3k</h4>
+                <h4>142</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -456,8 +456,8 @@
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
               </div>
-              <button class="btm btm1">热门</button>
-              <h2 class="h2">
+              <button class="btm">热门</button>
+              <h2>
                 参加计算机类竞赛每日都需要科普了解的小技巧与押题 ,
                 点击此处进入...
               </h2>
@@ -547,7 +547,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>88.2k</h4>
+                <h4>88</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -564,7 +564,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h5>759</h5>
+                <h5>59</h5>
                 <svg
                   t="1650981224466"
                   class="icon4"
@@ -588,14 +588,14 @@
               <img class="images" src="./images/时签logo.png" alt="" />
               <h1>
                 转行交流 | 当程序员敲代码这条路感觉很难一直走下去 ，
-                不想坚持了。。。
+                不想坚持了...
               </h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
               </div>
               <button class="btm">转行</button>
               <h2>
-                发现自己下定决心转行到现在满打满算也才不到一年。过去的一年，学过两门机器学习的课。做作业和项目也是和本行有关
+                发现自己下定决心转行到现在满打满算也才不到一年。过去的一年，学过两门机器学习的课。做的作业和项目也是和本行有关，这个行业的难度很大，每天都有解决不完的bug，头秃的实在坚持不下去了......
               </h2>
               <div class="bottom">
                 <svg
@@ -683,7 +683,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>42.1k</h4>
+                <h4>42</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -729,8 +729,8 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <button class="btm btms">2022时签</button>
-              <h2 class="h2s">
+              <button class="btm">2022时签</button>
+              <h2>
                 欢迎来到2022时签征文活动赛区！可提交多份征文 , 点击此处进入...
               </h2>
               <div class="bottom">
@@ -819,7 +819,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>66.6k</h4>
+                <h4>66</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -858,7 +858,7 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_1">如何在「求职面试」中发布一篇帖子 ？</h1>
+              <h1>如何在「求职面试」中发布一篇帖子 ？</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
@@ -866,7 +866,7 @@
               </div>
               <button class="btm">面试</button>
               <h2>
-                你的标题应当包含所面试的企业和职级；你的内容中请包含当前状态简介和面试的岗位；请描述的每一个环节面试方式和内容
+                为了更好地让大家看到你宝贵的面经和经验分享，我们为大家提供了一些关于如何在「求职面试」中发布一篇帖子的建议，快速掌握正确发帖姿势。你的标题应当包含所面试的企业和职级；
               </h2>
               <div class="bottom">
                 <svg
@@ -954,7 +954,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>42.3k</h4>
+                <h4>57</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -993,7 +993,7 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_2">
+              <h1 class="h1_1">
                 前辈帮帮团 | 作为监考官，我给参加竞赛大学生一些建议
               </h1>
               <div class="btn">
@@ -1001,14 +1001,15 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <div class="btm_1">
+              <div>
                 <button class="btm">面试</button>
-                <button class="btm">蓝桥杯</button>
                 <button class="btm">计赛</button>
               </div>
-              <h2 class="h2_1">
+              <h2>
                 本文正在参加时签 有奖征文｜2022
-                时签征文活动，欢迎大家点赞评论为我刷 666
+                时签征文活动，欢迎大家点赞评论为我刷
+                666！被几十个人咨询后，聊聊计算机大学生的迷茫，感觉学不到东西，怕找不到工作
+                迷茫，到底是就业还是读研
               </h2>
               <div class="bottom">
                 <svg
@@ -1096,7 +1097,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>75.4k</h4>
+                <h4>75</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1135,15 +1136,18 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1">竞赛讨论 | 第十三届蓝桥杯</h1>
+              <h1 class="h1_1">竞赛讨论 | 第十三届蓝桥杯</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
               </div>
-              <button class="btm">竞赛</button>
-              <h2 class="h2_1">
-                兄弟们题目做的如何啊？啊啊~
-                反正我是歇菜了，想不出骚话，各位敬请畅所欲言
+              <div>
+                <button class="btm">蓝桥杯</button>
+
+                <button class="btm">竞赛</button>
+              </div>
+              <h2>
+                兄弟们题目做的如何啊？啊啊~反正我是歇菜了，想不出骚话，各位敬请畅所欲言,蓝桥杯题给我做自闭了，搞得我满头雾水，hard确实少，主要感觉hard做不动，还是有点太功利了，主要是为了面试...
               </h2>
               <div class="bottom">
                 <svg
@@ -1231,7 +1235,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>22.1k</h4>
+                <h4>22</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1272,9 +1276,9 @@
           <ul class="content_1" v-show="Index == 1">
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_3">
+              <h1 class="h1_1">
                 转行交流 | 当程序员敲代码这条路感觉很难一直走下去 ，
-                不想坚持了。。。
+                不想坚持了...
               </h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
@@ -1282,7 +1286,7 @@
               </div>
               <button class="btm">转行</button>
               <h2>
-                发现自己下定决心转行到现在满打满算也才不到一年。过去的一年，学过两门机器学习的课。做作业和项目也是和本行有关
+                发现自己下定决心转行到现在满打满算也才不到一年。过去的一年，学过两门机器学习的课。做的作业和项目也是和本行有关，这个行业的难度很大，每天都有解决不完的bug，头秃的实在坚持不下去了......
               </h2>
               <div class="bottom">
                 <svg
@@ -1370,7 +1374,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>42.1k</h4>
+                <h4>42</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1409,7 +1413,7 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_2">
+              <h1 class="h1_1">
                 如何在「求职面试」中发布一篇帖子 ？啦啦啦啦啦啦~~~
               </h1>
               <div class="btn">
@@ -1419,7 +1423,7 @@
               </div>
               <button class="btm">面试</button>
               <h2>
-                你的标题应当包含所面试的企业和职级；你的内容中请包含当前状态简介和面试的岗位；请描述的每一个环节面试方式和内容
+                为了更好地让大家看到你宝贵的面经和经验分享，我们为大家提供了一些关于如何在「求职面试」中发布一篇帖子的建议，快速掌握正确发帖姿势。你的标题应当包含所面试的企业和职级；
               </h2>
               <div class="bottom">
                 <svg
@@ -1507,7 +1511,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>42.3k</h4>
+                <h4>57</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1553,8 +1557,8 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <button class="btm btms">2022时签</button>
-              <h2 class="h2s">
+              <button class="btm">2022时签</button>
+              <h2>
                 欢迎来到2022时签征文活动赛区！可提交多份征文 , 点击此处进入...
               </h2>
               <div class="bottom">
@@ -1643,7 +1647,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>66.6k</h4>
+                <h4>66</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1682,22 +1686,22 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_4">
-                前辈帮帮团 | 作为监考官，我给参加竞赛大学生一些建议
-              </h1>
+              <h1>前辈帮帮团 | 作为监考官，我给参加竞赛大学生一些建议</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <div class="btm_1">
+              <div>
                 <button class="btm">面试</button>
                 <button class="btm">蓝桥杯</button>
                 <button class="btm">计赛</button>
               </div>
-              <h2 class="h2_1">
+              <h2>
                 本文正在参加时签 有奖征文｜2022
-                时签征文活动，欢迎大家点赞评论为我刷 666
+                时签征文活动，欢迎大家点赞评论为我刷
+                666！被几十个人咨询后，聊聊计算机大学生的迷茫，感觉学不到东西，怕找不到工作
+                迷茫，到底是就业还是读研
               </h2>
               <div class="bottom">
                 <svg
@@ -1785,7 +1789,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>75.4k</h4>
+                <h4>75</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1830,8 +1834,8 @@
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
               </div>
-              <button class="btm btm1">热门</button>
-              <h2 class="h2">
+              <button class="btm">热门</button>
+              <h2>
                 参加计算机类竞赛每日都需要科普了解的小技巧与押题 ,
                 点击此处进入...
               </h2>
@@ -1921,7 +1925,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>88.2k</h4>
+                <h4>88</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -1960,15 +1964,14 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_5">竞赛讨论 | 第十三届蓝桥杯</h1>
+              <h1>竞赛讨论 | 第十三届蓝桥杯</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
               </div>
               <button class="btm">竞赛</button>
-              <h2 class="h2_1">
-                兄弟们题目做的如何啊？啊啊~
-                反正我是歇菜了，想不出骚话，各位敬请畅所欲言
+              <h2>
+                兄弟们题目做的如何啊？啊啊~反正我是歇菜了，想不出骚话，各位敬请畅所欲言,蓝桥杯题给我做自闭了，搞得我满头雾水，hard确实少，主要感觉hard做不动，还是有点太功利了，主要是为了面试...
               </h2>
               <div class="bottom">
                 <svg
@@ -2056,7 +2059,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>22.1k</h4>
+                <h4>22</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2102,7 +2105,7 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <button class="btm btm1">推荐</button>
+              <button class="btm">推荐</button>
               <h2>历年来蓝桥杯真题知识点以及题型的总结 , 由此进入...</h2>
               <div class="bottom">
                 <svg
@@ -2190,7 +2193,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>15.4k</h4>
+                <h4>154</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2237,7 +2240,7 @@
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
               <button class="btm">2022时签系统</button>
-              <h2 class="h2">
+              <h2>
                 计算机设计大赛竞赛经验以及计赛历年的注意事项等等内容 ,
                 由此进入...
               </h2>
@@ -2327,7 +2330,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>20.3k</h4>
+                <h4>55</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2344,7 +2347,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h5>154</h5>
+                <h5>68</h5>
                 <svg
                   t="1650981224466"
                   class="icon4"
@@ -2374,8 +2377,8 @@
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
               </div>
-              <button class="btm btm1">热门</button>
-              <h2 class="h2">
+              <button class="btm">热门</button>
+              <h2>
                 参加计算机类竞赛每日都需要科普了解的小技巧与押题 ,
                 点击此处进入...
               </h2>
@@ -2465,7 +2468,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>88.2k</h4>
+                <h4>132</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2482,7 +2485,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h5>759</h5>
+                <h5>159</h5>
                 <svg
                   t="1650981224466"
                   class="icon4"
@@ -2499,27 +2502,27 @@
                     p-id="36143"
                   ></path>
                 </svg>
-                <h6>84</h6>
+                <h6>24</h6>
               </div>
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_4">
-                前辈帮帮团 | 作为监考官，我给参加竞赛大学生一些建议
-              </h1>
+              <h1>前辈帮帮团 | 作为监考官，我给参加竞赛大学生一些建议</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <div class="btm_1">
+              <div>
                 <button class="btm">面试</button>
                 <button class="btm">蓝桥杯</button>
                 <button class="btm">计赛</button>
               </div>
-              <h2 class="h2_1">
+              <h2>
                 本文正在参加时签 有奖征文｜2022
-                时签征文活动，欢迎大家点赞评论为我刷 666
+                时签征文活动，欢迎大家点赞评论为我刷
+                666！被几十个人咨询后，聊聊计算机大学生的迷茫，感觉学不到东西，怕找不到工作
+                迷茫，到底是就业还是读研
               </h2>
               <div class="bottom">
                 <svg
@@ -2607,7 +2610,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>75.4k</h4>
+                <h4>75</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2653,8 +2656,8 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <button class="btm btms">2022时签</button>
-              <h2 class="h2s">
+              <button class="btm">2022时签</button>
+              <h2>
                 欢迎来到2022时签征文活动赛区！可提交多份征文 , 点击此处进入...
               </h2>
               <div class="bottom">
@@ -2743,7 +2746,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>66.6k</h4>
+                <h4>100</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2760,7 +2763,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h5>467</h5>
+                <h5>66</h5>
                 <svg
                   t="1650981224466"
                   class="icon4"
@@ -2791,7 +2794,7 @@
               </div>
               <button class="btm">转行</button>
               <h2>
-                发现自己下定决心转行到现在满打满算也才不到一年。过去的一年，学过两门机器学习的课。做作业和项目也是和本行有关
+                发现自己下定决心转行到现在满打满算也才不到一年。过去的一年，学过两门机器学习的课。做的作业和项目也是和本行有关，这个行业的难度很大，每天都有解决不完的bug，头秃的实在坚持不下去了......
               </h2>
               <div class="bottom">
                 <svg
@@ -2879,7 +2882,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>42.1k</h4>
+                <h4>42</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -2925,7 +2928,7 @@
                 <el-button type="warning" plain size="mini">官方</el-button>
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
-              <button class="btm btm1">推荐</button>
+              <button class="btm">推荐</button>
               <h2>历年来蓝桥杯真题知识点以及题型的总结 , 由此进入...</h2>
               <div class="bottom">
                 <svg
@@ -3013,7 +3016,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>15.4k</h4>
+                <h4>154</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -3060,7 +3063,7 @@
                 <el-button type="success" plain size="mini">推荐</el-button>
               </div>
               <button class="btm">2022时签系统</button>
-              <h2 class="h2">
+              <h2>
                 计算机设计大赛竞赛经验以及计赛历年的注意事项等等内容 ,
                 由此进入...
               </h2>
@@ -3150,7 +3153,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>20.3k</h4>
+                <h4>142</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -3189,7 +3192,7 @@
             </li>
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1_1">如何在「求职面试」中发布一篇帖子 ？</h1>
+              <h1>如何在「求职面试」中发布一篇帖子 ？</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
@@ -3197,7 +3200,7 @@
               </div>
               <button class="btm">面试</button>
               <h2>
-                你的标题应当包含所面试的企业和职级；你的内容中请包含当前状态简介和面试的岗位；请描述的每一个环节面试方式和内容
+                为了更好地让大家看到你宝贵的面经和经验分享，我们为大家提供了一些关于如何在「求职面试」中发布一篇帖子的建议，快速掌握正确发帖姿势。你的标题应当包含所面试的企业和职级；
               </h2>
               <div class="bottom">
                 <svg
@@ -3285,7 +3288,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>42.3k</h4>
+                <h4>57</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -3302,7 +3305,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h5>769</h5>
+                <h5>69</h5>
                 <svg
                   t="1650981224466"
                   class="icon4"
@@ -3322,18 +3325,16 @@
                 <h6>77</h6>
               </div>
             </li>
-
             <li class="li_2">
               <img class="images" src="./images/时签logo.png" alt="" />
-              <h1 class="h1">竞赛讨论 | 第十三届蓝桥杯</h1>
+              <h1 class="h1_1">竞赛讨论 | 第十三届蓝桥杯</h1>
               <div class="btn">
                 <el-button type="primary" plain size="mini">置顶</el-button>
                 <el-button type="warning" plain size="mini">官方</el-button>
               </div>
               <button class="btm">竞赛</button>
-              <h2 class="h2_1">
-                兄弟们题目做的如何啊？啊啊~
-                反正我是歇菜了，想不出骚话，各位敬请畅所欲言
+              <h2>
+                兄弟们题目做的如何啊？啊啊~反正我是歇菜了，想不出骚话，各位敬请畅所欲言,蓝桥杯题给我做自闭了，搞得我满头雾水，hard确实少，主要感觉hard做不动，还是有点太功利了，主要是为了面试...
               </h2>
               <div class="bottom">
                 <svg
@@ -3421,7 +3422,7 @@
                     fill="#e6e6e6"
                   ></path>
                 </svg>
-                <h4>22.1k</h4>
+                <h4>22</h4>
                 <svg
                   t="1650980824580"
                   class="icon3"
@@ -3578,7 +3579,7 @@
               <li>
                 <svg
                   t="1651026926089"
-                  class="icon"
+                  class="icon icon_1"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -3592,7 +3593,7 @@
                     fill="#FFA116"
                   ></path>
                 </svg>
-                <img src="./images/5.jpg" alt="" />
+                <img class="img_1" src="./images/5.jpg" alt="" />
                 <h1>兄弟们，要刷到什么..</h1>
                 <svg
                   t="1651027932307"
@@ -3725,7 +3726,7 @@
               <li>
                 <svg
                   t="1651028892768"
-                  class="icon icon_3"
+                  class="icon icon_1"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -3739,8 +3740,8 @@
                     p-id="29843"
                   ></path>
                 </svg>
-                <img class="image_3" src="../images/1.jpg" alt="" />
-                <h1 class="h1_2">前辈帮帮团 | 作为..</h1>
+                <img class="img_1" src="../images/1.jpg" alt="" />
+                <h1>前辈帮帮团 | 作为..</h1>
                 <svg
                   t="1651027932307"
                   class="icon1"
@@ -3872,7 +3873,7 @@
               <li>
                 <svg
                   t="1651028975763"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -3886,7 +3887,7 @@
                     p-id="31214"
                   ></path>
                 </svg>
-                <img class="image_1" src="./images/6.jpg" alt="" />
+                <img src="./images/6.jpg" alt="" />
                 <h1>竞赛和项目双重打击</h1>
                 <svg
                   t="1651027932307"
@@ -4019,7 +4020,7 @@
               <li>
                 <svg
                   t="1651030081498"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4033,14 +4034,14 @@
                     p-id="32605"
                   ></path>
                 </svg>
-                <img class="image_1" src="./images/5.jpg" alt="" />
+                <img src="./images/5.jpg" alt="" />
                 <h1>论如何高效备考竞赛</h1>
                 <h2>高效刷满 100 题并形成长期记忆</h2>
               </li>
               <li>
                 <svg
                   t="1651030250159"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4054,14 +4055,14 @@
                     p-id="34057"
                   ></path>
                 </svg>
-                <img class="image_1" src="../images/1.jpg" alt="" />
+                <img src="../images/1.jpg" alt="" />
                 <h1>第357场竞赛 | 日赛</h1>
                 <h2>欢迎小伙伴们在这里交流分享经验</h2>
               </li>
               <li>
                 <svg
                   t="1651030365089"
-                  class="icon icon_2"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4075,14 +4076,14 @@
                     p-id="35391"
                   ></path>
                 </svg>
-                <img class="image_2" src="./images/6.jpg" alt="" />
-                <h1 class="h1_1">问问大家刷多少题才拿上..</h1>
+                <img src="./images/6.jpg" alt="" />
+                <h1>问问大家刷多少题才拿上..</h1>
                 <h2>刷多少题才能拿到竞赛奖状成功上岸</h2>
               </li>
               <li>
                 <svg
                   t="1651031116109"
-                  class="icon icon_2"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4096,8 +4097,8 @@
                     p-id="36578"
                   ></path>
                 </svg>
-                <img class="image_2" src="./images/7.jpg" alt="" />
-                <h1 class="h1_1">经验分享 | 八股文 的 学习</h1>
+                <img src="./images/7.jpg" alt="" />
+                <h1>经验分享 | 八股文 的 学习</h1>
                 <h2>学习路线、做笔记、方法要点、步骤</h2>
               </li>
             </ul>
@@ -4105,7 +4106,7 @@
               <li>
                 <svg
                   t="1651026926089"
-                  class="icon"
+                  class="icon icon_1"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4119,7 +4120,7 @@
                     fill="#FFA116"
                   ></path>
                 </svg>
-                <img src="./images/7.jpg" alt="" />
+                <img class="img_1" src="./images/7.jpg" alt="" />
                 <h1>竞赛和项目双重打击.</h1>
                 <svg
                   t="1651027932307"
@@ -4252,7 +4253,7 @@
               <li>
                 <svg
                   t="1651028892768"
-                  class="icon icon_3"
+                  class="icon icon_1"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4266,9 +4267,8 @@
                     p-id="29843"
                   ></path>
                 </svg>
-                <img class="image_3" src="./images/8.jpg" alt="" />
+                <img class="img_1" src="./images/8.jpg" alt="" />
                 <h1>第357场竞赛 | 日赛</h1>
-
                 <svg
                   t="1651027932307"
                   class="icon1"
@@ -4400,7 +4400,7 @@
               <li>
                 <svg
                   t="1651028975763"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4414,7 +4414,7 @@
                     p-id="31214"
                   ></path>
                 </svg>
-                <img class="image_1" src="./images/6.jpg" alt="" />
+                <img src="./images/6.jpg" alt="" />
                 <h1>兄弟们，要刷到什么..</h1>
                 <svg
                   t="1651027932307"
@@ -4547,7 +4547,7 @@
               <li>
                 <svg
                   t="1651030081498"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4561,14 +4561,14 @@
                     p-id="32605"
                   ></path>
                 </svg>
-                <img class="image_1" src="./images/5.jpg" alt="" />
-                <h1 class="h1_1">经验分享 | 八股文 的 学习</h1>
+                <img src="./images/5.jpg" alt="" />
+                <h1>经验分享 | 八股文 的 学习</h1>
                 <h2>学习路线、做笔记、方法要点、步骤</h2>
               </li>
               <li>
                 <svg
                   t="1651030250159"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4582,14 +4582,14 @@
                     p-id="34057"
                   ></path>
                 </svg>
-                <img class="image_1" src="../images/1.jpg" alt="" />
-                <h1 class="h1_2">前辈帮帮团 | 作为..</h1>
+                <img src="../images/1.jpg" alt="" />
+                <h1>前辈帮帮团 | 作为..</h1>
                 <h2>作为监考官，我给竞赛大学生一些建议</h2>
               </li>
               <li>
                 <svg
                   t="1651030365089"
-                  class="icon icon_2"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4604,14 +4604,14 @@
                   ></path>
                 </svg>
 
-                <img class="image_2" src="./images/7.jpg" alt="" />
+                <img src="./images/7.jpg" alt="" />
                 <h1>论如何高效备考竞赛</h1>
                 <h2>高效刷满 100 题并形成长期记忆</h2>
               </li>
               <li>
                 <svg
                   t="1651031116109"
-                  class="icon icon_2"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4625,8 +4625,8 @@
                     p-id="36578"
                   ></path>
                 </svg>
-                <img class="image_2" src="./images/6.jpg" alt="" />
-                <h1 class="h1_1">问问大家刷多少题才拿上..</h1>
+                <img src="./images/6.jpg" alt="" />
+                <h1>问问大家刷多少题才拿上..</h1>
                 <h2>刷多少题才能拿到竞赛奖状成功上岸</h2>
               </li>
             </ul>
@@ -4634,7 +4634,7 @@
               <li>
                 <svg
                   t="1651026926089"
-                  class="icon"
+                  class="icon icon_1"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4648,7 +4648,7 @@
                     fill="#FFA116"
                   ></path>
                 </svg>
-                <img src="./images/8.jpg" alt="" />
+                <img class="img_1" src="./images/8.jpg" alt="" />
                 <h1>论如何高效备考竞赛</h1>
                 <svg
                   t="1651027932307"
@@ -4781,7 +4781,7 @@
               <li>
                 <svg
                   t="1651028892768"
-                  class="icon icon_3"
+                  class="icon icon_1"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4795,8 +4795,8 @@
                     p-id="29843"
                   ></path>
                 </svg>
-                <img class="image_3" src="../images/1.jpg" alt="" />
-                <h1 class="h1_2">竞赛和项目双重打击</h1>
+                <img class="img_1" src="../images/1.jpg" alt="" />
+                <h1>竞赛和项目双重打击</h1>
                 <svg
                   t="1651027932307"
                   class="icon1"
@@ -4928,7 +4928,7 @@
               <li>
                 <svg
                   t="1651028975763"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -4942,7 +4942,7 @@
                     p-id="31214"
                   ></path>
                 </svg>
-                <img class="image_1" src="./images/5.jpg" alt="" />
+                <img src="./images/5.jpg" alt="" />
                 <h1>第357场竞赛 | 日赛</h1>
                 <svg
                   t="1651027932307"
@@ -5075,7 +5075,7 @@
               <li>
                 <svg
                   t="1651030081498"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -5089,14 +5089,14 @@
                     p-id="32605"
                   ></path>
                 </svg>
-                <img class="image_1" src="./images/7.jpg" alt="" />
-                <h1 class="h1_1">经验分享 | 八股文 的 学习</h1>
+                <img src="./images/7.jpg" alt="" />
+                <h1>经验分享 | 八股文 的 学习</h1>
                 <h2>学习路线、做笔记、方法要点、步骤</h2>
               </li>
               <li>
                 <svg
                   t="1651030250159"
-                  class="icon icon_1"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -5110,14 +5110,14 @@
                     p-id="34057"
                   ></path>
                 </svg>
-                <img class="image_1" src="../images/1.jpg" alt="" />
+                <img src="../images/1.jpg" alt="" />
                 <h1>前辈帮帮团 | 作为..</h1>
                 <h2>作为监考官，我给竞赛大学生一些建议</h2>
               </li>
               <li>
                 <svg
                   t="1651030365089"
-                  class="icon icon_2"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -5131,14 +5131,14 @@
                     p-id="35391"
                   ></path>
                 </svg>
-                <img class="image_2" src="./images/6.jpg" alt="" />
-                <h1 class="h1_1">问问大家刷多少题才拿上..</h1>
+                <img src="./images/6.jpg" alt="" />
+                <h1>问问大家刷多少题才拿上..</h1>
                 <h2>刷多少题才能拿到竞赛奖状成功上岸</h2>
               </li>
               <li>
                 <svg
                   t="1651031116109"
-                  class="icon icon_2"
+                  class="icon"
                   viewBox="0 0 1024 1024"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -5152,7 +5152,7 @@
                     p-id="36578"
                   ></path>
                 </svg>
-                <img class="image_2" src="./images/7.jpg" alt="" />
+                <img src="./images/7.jpg" alt="" />
                 <h1>兄弟们，要刷到什么..</h1>
                 <h2>要刷到什么程度才能参加竞赛得奖呢</h2>
               </li>
@@ -5367,6 +5367,7 @@ export default {
       background-color: #36393f;
       border-radius: 15px;
       margin-bottom: 1.5em;
+      text-align: left;
     }
     .li_1 {
       .image {
@@ -5375,23 +5376,26 @@ export default {
         transform: scale(0.7);
         height: 14em;
         border-radius: 15px;
-        margin-left: -2.5em;
         float: left;
+        left: -2.5em;
       }
       .images {
-        margin-top: -2em;
-        margin-left: -42em;
+        position: relative;
+        top: -1em;
+        left: -8em;
         transform: scale(0.5);
       }
       h1 {
         position: relative;
         font-size: 16px;
-        margin: -12.4em 14em;
+        top: -13em;
+        left: -1.5em;
       }
       .btn {
         width: 20em;
         position: absolute;
-        margin: 8.6em 51em;
+        margin-top: -25.3em;
+        left: 52em;
         .el-button {
           float: left;
           border-radius: 10px;
@@ -5399,8 +5403,8 @@ export default {
       }
       .btm {
         position: relative;
-        margin-top: 12em;
-        margin-left: -36.5em;
+        top: -28em;
+        left: 27em;
         color: #515151;
         padding: 0 1em;
         height: 2em;
@@ -5409,29 +5413,17 @@ export default {
         border: none;
         background-color: #e6e6e6;
       }
-      .btm1 {
-        margin-left: -41em;
-      }
-      .btms {
-        left: -1em;
-      }
       h2 {
         position: relative;
-        top: -8.7em;
+        top: -33em;
         font-size: 14px;
-        left: -7em;
+        left: 23.3em;
         color: #e6e6e6;
-      }
-      .h2 {
-        left: -3em;
-      }
-      .h2s {
-        left: -4em;
       }
       .bottom {
         position: relative;
-        margin-top: -19.7em;
-        left: -19em;
+        top: -47em;
+        left: 27.2em;
         .icon1 {
           position: relative;
           margin-right: 1em;
@@ -5441,83 +5433,72 @@ export default {
           position: relative;
           font-size: 14px;
           top: -11.8em;
-          left: 16.8em;
+          left: 6em;
         }
         .icon2 {
           position: relative;
           top: -26.2em;
-          left: 23.5em;
+          left: 10.5em;
         }
         h4 {
           position: relative;
           font-size: 14px;
           top: -34.6em;
-          left: 22.7em;
+          left: 11.5em;
         }
         .icon3 {
           position: relative;
           top: -53em;
-          left: 31em;
+          left: 17.5em;
         }
         h5 {
           position: relative;
           font-size: 14px;
           top: -57.5em;
-          left: 28.7em;
+          left: 17.5em;
         }
         .icon4 {
           position: relative;
           top: -79.6em;
-          left: 37em;
+          left: 23.5em;
         }
         h6 {
           position: relative;
           font-size: 14px;
           top: -80.3em;
-          left: 33.5em;
+          left: 23em;
         }
       }
     }
     .li_2 {
       .images {
-        margin-top: -2em;
-        margin-left: -62em;
+        position: relative;
+        top: -1em;
+        margin-left: -0.5em;
         transform: scale(0.5);
       }
       h1 {
         position: relative;
         font-size: 17px;
         width: 60em;
-        left: -20em;
-        margin-top: -11.7em;
+        left: -19.2em;
+        margin-top: -12.5em;
       }
       .h1_1 {
-        left: -28em;
-      }
-      .h1_2 {
-        left: -13.2em;
-      }
-      .h1_3 {
-        left: -9.2em;
-      }
-      .h1_4 {
-        left: -24em;
-      }
-      .h1_5 {
-        left: -31em;
+        left: 4em;
       }
       .btn {
         width: 20em;
         position: absolute;
-        margin: -13.4em 49em;
+        margin: -13.4em 51.5em;
         .el-button {
           border-radius: 10px;
         }
       }
       .btm {
         position: relative;
-        top: -10em;
-        left: -30.5em;
+        top: -10.5em;
+        left: 1.5em;
         color: #515151;
         padding: 0 1em;
         height: 2em;
@@ -5527,24 +5508,19 @@ export default {
         border: none;
         background-color: #e6e6e6;
       }
-      .btm_1 {
-        position: relative;
-        left: 5em;
-      }
       h2 {
         position: relative;
-        top: -17.3em;
+        top: -13em;
         font-size: 14px;
-        left: -0.6em;
+        left: 1.5em;
         color: #e6e6e6;
-      }
-      .h2_1 {
-        left: -10em;
+        width: 55em;
+        line-height: 1.5em;
       }
       .bottom {
         position: relative;
-        top: -30em;
-        left: -29em;
+        top: -19em;
+        left: 2em;
         .icon1 {
           position: relative;
           margin-right: 1em;
@@ -5554,40 +5530,40 @@ export default {
           position: relative;
           font-size: 14px;
           top: -11.8em;
-          left: 3.8em;
+          left: 6em;
         }
         .icon2 {
           position: relative;
           top: -26.2em;
-          left: 8.5em;
+          left: 10.5em;
         }
         h4 {
           position: relative;
           font-size: 14px;
           top: -34.6em;
-          left: 9.8em;
+          left: 11.5em;
         }
         .icon3 {
           position: relative;
           top: -53em;
-          left: 16em;
+          left: 17.5em;
         }
         h5 {
           position: relative;
           font-size: 14px;
           top: -57.5em;
-          left: 15.8em;
+          left: 17.5em;
         }
         .icon4 {
           position: relative;
           top: -79.6em;
-          left: 22em;
+          left: 24.5em;
         }
         h6 {
           position: relative;
           font-size: 14px;
           top: -80.3em;
-          left: 20.8em;
+          left: 23.5em;
         }
       }
     }
@@ -5634,6 +5610,7 @@ export default {
   .right_1s {
     height: 4em;
     display: flex;
+    margin-left: 0.2em;
     li {
       position: relative;
       top: -18em;
@@ -5687,52 +5664,34 @@ export default {
     .content {
       color: white;
       width: 100%;
+      text-align: left;
       li {
         height: 5.5em;
         width: 100%;
         .icon {
           position: relative;
           top: 0.3em;
-          left: -13em;
+          left: 0.5em;
         }
         .icon_1 {
-          left: -6em;
-        }
-        .icon_2 {
-          left: -8em;
-        }
-        .icon_3 {
-          left: -11em;
+          left: -9em;
         }
         img {
           position: relative;
           width: 2em;
           height: 2em;
+          left: 0.5em;
           border-radius: 50%;
-          top: 0;
-          left: -12.7em;
         }
-        .image_1 {
-          left: -5.7em;
-        }
-        .image_2 {
-          left: -7.7em;
-        }
-        .image_3 {
-          left: -10.7em;
+        .img_1 {
+          left: -9em;
         }
         h1 {
           height: 0;
           position: relative;
           font-size: 15px;
           top: -11em;
-          left: 0.8em;
-        }
-        .h1_1 {
-          left: 2em;
-        }
-        .h1_2 {
-          left: 0.5em;
+          left: 4.7em;
         }
         .icon1 {
           float: right;
@@ -5743,7 +5702,7 @@ export default {
           position: relative;
           font-size: 12px;
           top: -11.5em;
-          left: 0.3em;
+          left: 3em;
           color: #cdcdcd;
         }
       }
