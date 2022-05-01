@@ -14,7 +14,9 @@ import { CountDown } from "vant";
 import { Tab, Tabs } from "vant";
 import { Sticky } from "vant";
 import lottie from "vue-lottie";
+import { Icon } from "vant";
 
+Vue.use(Icon);
 Vue.component("lottie", lottie);
 Vue.use(Sticky);
 Vue.use(Tab);

@@ -6,7 +6,7 @@
         :options="defaultOptions1"
         :width="150"
         :height="150"
-        style="position: absolute; margin: 3.9em 4em; z-index: 999"
+        style="position: absolute; margin: 3.9em 4em; z-index: 1"
         v-on:animCreated="handleAnimation"
       />
       <lottie

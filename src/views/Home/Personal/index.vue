@@ -290,6 +290,7 @@
             <div class="h4"><i class="el-icon-close"></i>1</div>
             <el-button class="b1"><span>标签</span></el-button>
             <div class="h5"><i class="el-icon-close"></i>8</div>
+            <span class="ss">查看更多</span>
           </li>
           <li>
             <h3 class="hhh">.</h3>
@@ -300,13 +301,15 @@
             <div class="h7"><i class="el-icon-close"></i>5</div>
             <el-button class="b3"><span>extends继承</span></el-button>
             <div class="h8"><i class="el-icon-close"></i>3</div>
+            <el-button class="b4"><span>字符串</span></el-button>
+            <div class="h9"><i class="el-icon-close"></i>40</div>
             <span class="s">查看更多</span>
           </li>
         </div>
       </div>
     </div>
     <div class="center">
-      <ul>
+      <ul class="ul">
         <li>
           <h1>学习时长</h1>
           <div class="circleBox">
@@ -615,7 +618,157 @@
           </svg>
           <h1>讨论发布</h1>
         </div>
-        <el-empty description="暂无内容"></el-empty>
+        <ul v-show="y1 == 0">
+          <li class="li">
+            <h1>1035. 两颗二叉搜索树中的所有元素</h1>
+            <h2>2小时前</h2>
+          </li>
+          <li>
+            <h1>54. 并发类库提供的线程池实现</h1>
+            <h2>8小时前</h2>
+          </li>
+          <li class="li">
+            <h1>427. 建立四叉树</h1>
+            <h2>1天前</h2>
+          </li>
+          <li>
+            <h1>5213. attribute 和 property的区别</h1>
+            <h2>2天前</h2>
+          </li>
+          <li class="li">
+            <h1>100. JDK 动态代理与 CGLIB 区别</h1>
+            <h2>2天前</h2>
+          </li>
+          <li>
+            <h1>756. 块级格式化上下文BFC</h1>
+            <h2>3天前</h2>
+          </li>
+          <li class="li">
+            <h1>256. 太平洋大西洋水流问题</h1>
+            <h2>5天前</h2>
+          </li>
+          <li>
+            <h1>412. 三维形体投影面积</h1>
+            <h2>6天前</h2>
+          </li>
+          <li class="li">
+            <h1>333. 按奇偶排序数组</h1>
+            <h2>7天前</h2>
+          </li>
+        </ul>
+        <ul v-show="y1 == 1">
+          <li class="li">
+            <h1>386. 字典序排数 - 字典排序树（JAVA回溯）</h1>
+            <div class="right">
+              <h2>2小时前</h2>
+              <div class="con_1">
+                <van-icon name="good-job-o" class="icon_1" />
+                <h3>0</h3>
+              </div>
+              <div class="con_2">
+                <van-icon name="eye-o" class="icon_2" />
+                <h4>3</h4>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h1>2195. 向数组中追加 K 个整数 - 瞎几把乱写过了</h1>
+            <h2>8小时前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>9</h4>
+            </div>
+          </li>
+          <li class="li">
+            <h1>427. 太平洋大西洋水流问题 - 暴力DFC</h1>
+            <h2>1天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>5</h4>
+            </div>
+          </li>
+          <li>
+            <h1>91. 解码方法 - 官方题解通俗易懂版本</h1>
+            <h2>2天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>4</h4>
+            </div>
+          </li>
+          <li class="li">
+            <h1>413. 等差数列划分 - 官方题解通俗易懂版本</h1>
+            <h2>2天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>9</h4>
+            </div>
+          </li>
+          <li>
+            <h1>42. 接雨水 - 官方题解通俗易懂版本</h1>
+            <h2>3天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>2</h4>
+            </div>
+          </li>
+          <li class="li">
+            <h1>152. 乘积最大子数组 - 官方题解通俗易懂版本</h1>
+            <h2>5天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>7</h4>
+            </div>
+          </li>
+          <li>
+            <h1>412. 三维形体投影面积 - 暴力DFC</h1>
+            <h2>6天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>8</h4>
+            </div>
+          </li>
+          <li class="li">
+            <h1>333. 按奇偶排序数组 - 暴力DFC</h1>
+            <h2>7天前</h2>
+            <div class="con_1">
+              <van-icon name="good-job-o" class="icon_1" />
+              <h3>0</h3>
+            </div>
+            <div class="con_2">
+              <van-icon name="eye-o" class="icon_2" />
+              <h4>5</h4>
+            </div>
+          </li>
+        </ul>
+        <img src="./images/1.webp" alt="" v-show="y1 == 2" />
       </div>
     </div>
   </div>
@@ -770,7 +923,7 @@ export default {
     display: flex;
     margin-top: -3.5em;
     width: 200px;
-    height: 81em;
+    height: 86em;
     background-color: #36393f;
     border-radius: 10px;
     float: left;
@@ -940,7 +1093,7 @@ export default {
           }
           .hhh {
             position: absolute;
-            top: 6.6em;
+            top: 8.1em;
             float: left;
             font-size: 20px;
             color: green;
@@ -990,42 +1143,57 @@ export default {
             width: 20px;
             position: absolute;
             color: #adb0b8;
-            top: 14.5em;
+            top: 17.4em;
             left: 5.8em;
           }
           .h7 {
             width: 20px;
             position: absolute;
             color: #adb0b8;
-            top: 14.5em;
+            top: 17.4em;
             left: 12.3em;
           }
           .h8 {
             width: 20px;
             position: absolute;
             color: #adb0b8;
-            top: 18.3em;
+            top: 20.6em;
             left: 9em;
+          }
+          .h9 {
+            width: 40px;
+            position: absolute;
+            color: #adb0b8;
+            top: 23.6em;
+            left: 6em;
           }
           .b1 {
             margin: -1.7em 5.5em;
           }
           .b2 {
-            margin: 3.5em 0;
+            margin: 6em 0;
           }
           .b {
-            margin: -5.2em 5.5em;
+            margin: -7.7em 5.5em;
+          }
+          .ss {
+            margin: 8.5em -1em;
+            color: white;
           }
           .basics {
             position: absolute;
-            margin: 1em 1.3em;
+            margin: 4em 1.3em;
           }
           .b3 {
-            margin: -2em 0;
+            margin: -5em 0;
             width: 6em;
           }
+          .b4 {
+            margin: -2.3em 0;
+            width: 4em;
+          }
           .s {
-            margin: 18.7em 1em;
+            margin: 23.5em 1em;
             color: white;
           }
         }
@@ -1033,7 +1201,7 @@ export default {
     }
   }
   .center {
-    ul {
+    .ul {
       position: relative;
       top: -8.5em;
       left: 1.5em;
@@ -1199,22 +1367,13 @@ export default {
     .bottom {
       position: relative;
       width: 74em;
-      height: 44em;
+      height: 49em;
       border-radius: 10px;
       background-color: #36393f;
       top: 14.5em;
       left: 18em;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       color: white;
-      .el-empty {
-        position: absolute;
-        top: 10em;
-        left: 30em;
-        /deep/ p {
-          color: white;
-          margin-top: -3em;
-        }
-      }
       .btm {
         position: relative;
         width: 10em;
@@ -1222,7 +1381,7 @@ export default {
         line-height: 4em;
         float: left;
         left: -15em;
-        margin: 2em 0;
+        margin: 1em 0;
         border-radius: 7px;
         .icon {
           position: relative;
@@ -1242,6 +1401,71 @@ export default {
       }
       .c2 {
         background-color: transparent;
+      }
+      ul {
+        position: relative;
+        top: 7.5em;
+        li {
+          border-radius: 7px;
+          margin: 0 auto;
+          padding: 0 1.5em;
+          width: 92%;
+          height: 4.4em;
+          line-height: 4.4em;
+          background-color: transparent;
+          h1 {
+            position: absolute;
+            font-family: "宋体", serif;
+            font-size: 14px;
+            text-align: left;
+          }
+          h2 {
+            position: absolute;
+            right: 2.5em;
+            font-family: "楷体", serif;
+            font-size: 16px;
+            color: #bfbfbf;
+          }
+          .con_1 {
+            position: absolute;
+            width: 4em;
+            right: 14em;
+            .icon_1 {
+              top: 0.8em;
+              font-size: 20px;
+              float: left;
+            }
+            h3 {
+              font-family: "楷体", serif;
+              font-size: 16px;
+              color: #bfbfbf;
+            }
+          }
+          .con_2 {
+            position: absolute;
+            right: 9em;
+            width: 4em;
+            .icon_2 {
+              font-size: 20px;
+              float: left;
+              top: 0.8em;
+            }
+            h4 {
+              font-family: "楷体", serif;
+              font-size: 16px;
+              color: #bfbfbf;
+            }
+          }
+        }
+        .li {
+          background-color: #202225;
+        }
+      }
+      img {
+        position: absolute;
+        top: 20em;
+        left: 25em;
+        transform: scale(1.3);
       }
     }
   }
