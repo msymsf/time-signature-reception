@@ -39,6 +39,7 @@ export default new Vuex.Store({
   modules: {
     user,
   },
+
   plugins: [
     //自动将vuex的state保存在sessionStorage的插件
     createPersistedState({

@@ -1261,6 +1261,7 @@ export default {
       this.scene = scene;
       this.show1 = show1;
     },
+
     showClick() {
       this.zhanshi = true;
       this.zhanshi1 = true;

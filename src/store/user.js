@@ -33,6 +33,7 @@ const actions = {
       return Promise.reject(new Error("faile"));
     }
   },
+
   //登录业务
   async userLogin({ commit }, params) {
     let result = await login(params);

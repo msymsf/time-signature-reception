@@ -1233,6 +1233,7 @@ export default {
             transform: scale(0.4);
           }
         }
+
         .text {
           font-size: 16px;
           position: absolute;

@@ -6,6 +6,7 @@ export const login = (params) =>
     method: "POST",
     data: params,
   });
+
 export const reqRegister = (params) =>
   requests({ url: "/register", data: params, method: "POST" });
 export const reqCode = (email) =>

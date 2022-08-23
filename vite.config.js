@@ -3,7 +3,6 @@ import styleImport, { VantResolve } from "vite-plugin-style-import";
 import { createApp } from "vue";
 
 const app = createApp();
-
 export default {
   plugins: [
     vue(),

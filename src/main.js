@@ -26,7 +26,6 @@ Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Calendar);
 Vue.use(Badge);
-
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
 Vue.use(Overlay);

@@ -194,6 +194,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 .homes {
   z-index: 0;
   .img_1 {
